@@ -11,6 +11,7 @@ export default createGlobalStyle`
         text-decoration: none;
         list-style: none;
         font-family: "Sora", sans-serif;
+        font-size: 62.5%;
     }
 
 `
