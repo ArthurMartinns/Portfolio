@@ -2,6 +2,7 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import * as S from './header.styles'
 import { useState } from 'react'
 import Container from '../Container/container.view'
+import { Link } from 'react-router-dom'
 
 function HeaderView() {
 
@@ -32,7 +33,12 @@ function HeaderView() {
                     />
                     {isOpen && (
                         <S.SideMenu>
-                            
+                            <Link to={'/'} onClick={toggleMenu}>Home</Link>
+                            <Link to={'/About'} onClick={toggleMenu}>About</Link>
+                            <Link to={'/Skills'} onClick={toggleMenu}>Skills</Link>
+                            <Link to={'/Projects'} onClick={toggleMenu}>Projects</Link>
+                            <Link to={'/Contact'} onClick={toggleMenu}>Contact</Link>
+                            {/* <h1 onClick={toggleMenu}>Voltar</h1> */}
                         </S.SideMenu>
                     )}
                 </S.Header>

@@ -14,4 +14,11 @@ export default createGlobalStyle`
         font-size: 62.5%;
     }
 
+    a {
+        cursor: pointer;
+        text-decoration: none;
+        color: #000;
+        font-size: 20px;
+    }
+
 `

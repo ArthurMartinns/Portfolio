@@ -24,4 +24,9 @@ export const SideMenu = styled.div`
     width: 30rem;
     height: 100vh;
     transition: 0.8S;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;    
 `
