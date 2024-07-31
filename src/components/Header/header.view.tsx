@@ -11,14 +11,6 @@ function HeaderView() {
     const toggleMenu = () => {
         setIsOpen(!isOpen)
     }
-    
-    // const handleHomeScreen = () => {
-    //     setIsOpen(false)
-    // }
-
-    // const handleAboutScreen = () => {
-    //     setIsOpen(false)
-    // }
 
     return(
         <>
