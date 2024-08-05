@@ -7,7 +7,7 @@ export const Header = styled.div`
     align-items: center;
     justify-content: space-between;
     background-color: ${({theme}) => theme.COLORS.BACKGROUND};
-    padding:2rem;
+    padding-top: 2rem;
 `
 
 export const Title = styled.div`
