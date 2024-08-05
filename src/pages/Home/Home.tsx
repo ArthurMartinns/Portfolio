@@ -1,12 +1,8 @@
-import HeaderView from "../../components/Header/header.view"
-import { Outlet } from "react-router-dom"
-
 function Home() {
 
   return (
     <>
-      <HeaderView/>
-      <Outlet/>
+      <h3>teste</h3>
     </>
   )
 }
