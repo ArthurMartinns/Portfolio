@@ -15,6 +15,11 @@ export const Wrapper = styled.div`
 export const Left = styled.div`
     width: 100%;
     padding-top: 2rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+
     > h2{
         font-size: 3.2rem;
     }
@@ -22,14 +27,26 @@ export const Left = styled.div`
     > p{
         font-size: 1.6rem;
     }
+
+    > p:last-child {
+        color: #000;
+        text-align: justify;
+        max-width: 45rem;
+        margin-top: 2rem;
+    }
 `
 
 export const Right = styled.div`
     width: 100%;
     display: grid;
     grid-template-columns:  0.5fr 0.5fr 0.5fr;
-    grid-template-rows:  1fr 1fr 1fr;
-    grid-gap: 1rem;
+    grid-template-rows:  0.5fr 0.5fr 0.5fr;
+    grid-gap: 1.5rem;
+
+    &hover{
+        transform: scale(1.2rem);
+        transition: .8s;
+    }
 
     > div {
 
@@ -37,7 +54,7 @@ export const Right = styled.div`
 `
 
 export const skills = styled.div`
-    background-color: #D2D1D1;
+    background-color: #D1D1D1;
     border: 2px solid ${({theme}) => theme.COLORS.AZUL_ESCURO};
     display: flex;
     align-items: center;
