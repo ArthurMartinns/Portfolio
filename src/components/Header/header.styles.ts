@@ -8,6 +8,7 @@ export const Header = styled.div`
     justify-content: space-between;
     background-color: ${({theme}) => theme.COLORS.BACKGROUND};
     padding-top: 2rem;
+    max-height: 10vh;
 `
 
 export const Title = styled.div`
@@ -21,12 +22,31 @@ export const SideMenu = styled.div`
     right: 0;
     top: 0;
     background-color: #D9D9D9;
-    width: 30rem;
+    width: 100%;
     height: 100vh;
-    transition: 0.8S;
+    transition: all 0.5s ease-in-out;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px;    
+    gap: 40px;   
+    
+    
+    > a {
+        font-size: 3.6rem;
+    }
+
+    > a:hover{
+        background-color: #000;
+        color: ${({theme}) => theme.COLORS.WHITE};
+        border-radius: 1rem;
+    }
+`
+
+
+export const Close = styled.div`
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem 1rem;
 `

@@ -1,9 +1,13 @@
-function About() {
+import Container from '../../components/Container/container.view'
+import * as S from './about.styles'
 
+function About() {
   return (
-    <>
-      <h3>test</h3>
-    </>
+    <Container>
+      <S.Container>
+
+      </S.Container>
+    </Container>
   )
 }
 

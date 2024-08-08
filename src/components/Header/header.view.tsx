@@ -3,6 +3,7 @@ import * as S from './header.styles'
 import { useState } from 'react'
 import Container from '../Container/container.view'
 import { Link } from 'react-router-dom'
+import { MdClose } from 'react-icons/md'
 
 function HeaderView() {
 
@@ -30,7 +31,10 @@ function HeaderView() {
                             <Link to={'/Skills'} onClick={toggleMenu}>Skills</Link>
                             <Link to={'/Projects'} onClick={toggleMenu}>Projects</Link>
                             <Link to={'/Contact'} onClick={toggleMenu}>Contact</Link>
-                            {/* <h1 onClick={toggleMenu}>Voltar</h1> */}
+                            
+                            <S.Close>
+                                <MdClose onClick={toggleMenu} size={40}/>
+                            </S.Close>
                         </S.SideMenu>
                     )}
                 </S.Header>
