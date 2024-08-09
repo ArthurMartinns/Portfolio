@@ -17,12 +17,10 @@ function Projects() {
           <S.Wrapper>
             <div>
               a
-              <p onClick={handleOpenModal}>
-                Saiba mais
-              </p>
+              <button onMouseOver={handleOpenModal}>Saiba mais</button>
               {modal && (
                 <S.Modal>
-                  <h2>teste</h2>
+                  <p>teste</p>
                 </S.Modal>
               )}
             </div>

@@ -3,11 +3,9 @@ import styled from "styled-components";
 export const Content = styled.div`
     width: 100%;
     border: 2px solid #000;
-    height: 100vh;
 `
 
 export const Wrapper = styled.div`
-    height:100vh;
     align-content: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -21,8 +19,12 @@ export const Wrapper = styled.div`
 
 
 export const Modal = styled.div `
-    width: 80vw;
-    height: 80vh;
-    background-color: #6d6d6d;
+    width: 40rem;
+    height: 40rem;
+    background-color: #9d9d9d;
     position: absolute;
+
+    > p {
+        font-size: 2rem;
+    }
 `
