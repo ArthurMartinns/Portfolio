@@ -8,13 +8,13 @@ export const Header = styled.div`
     justify-content: space-between;
     background-color: ${({theme}) => theme.COLORS.BACKGROUND};
     padding-top: 2rem;
-    max-height: 10vh;
+    height: 12.0rem;
 `
 
 export const Title = styled.div`
-    font-size: 2.4rem;
-    font-weight: bold;
-    color: ${({theme}) => theme.COLORS.AZUL_ESCURO};
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: ${({theme}) => theme.COLORS.AZUL_CLARO};
 `
 
 export const SideMenu = styled.div`
@@ -49,4 +49,29 @@ export const Close = styled.div`
     top: 0;
     right: 0;
     margin: 1rem 1rem;
+`
+
+export const List = styled.ul`
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 1.8rem;
+`
+
+export const ListItems = styled.li`
+    list-style: none;
+    > a {
+        font-weight: 600;
+        font-size: 1.4rem;
+        color: ${({theme}) => theme.COLORS.GRAY};
+    }
+`
+
+export const Right = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.8rem;
+
 `
