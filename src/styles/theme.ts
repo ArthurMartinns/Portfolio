@@ -8,6 +8,11 @@ export default {
         AZUL_CLARO: "#457189",
         AZUL_ESCURO: "#263238",
     
-        GRAY: "#6D6D6D"
+        GRAY: "#6D6D6D",
+
+        
+        INFO: "#039BE5",      
+        LIGHT: "#F5F5F5",     
+        DARK: "#212121",      
     }
 }
