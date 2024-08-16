@@ -1,135 +1,111 @@
 import styled from "styled-components";
 
-export const Contact = styled.div`
+export const Profile = styled.div`
     width: 100%;
-    height: 90vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-`
-export const WrapperContact = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 2.8rem;    
+    margin-top: 24px;
 `
 
-export const BackContact = styled.div`
-    padding: 2.8rem;
-    width: 100%;
-    border-radius: .8rem;
-    background-color: #BDD5FF;
-`
-
-export const Content = styled.div`
+export const WrapperProfile = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 3.2rem;
+    gap: 28px;
+`
+
+export const BodyProfile = styled.div`
+    width: 100%;
+    border-radius: 8px;
+    padding: 28px;
+    background-color: ${({theme}) => theme.COLORS.DARK};
+`
+
+export const ContentMain = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
 `
 
 export const Title = styled.div`
-    border-bottom: 2px solid ${({theme}) => theme.COLORS.BLACK};
+    height: 50px;
     width: 100%;
-    padding-bottom: .6rem;
-    > h2 {
-        font-size: 2rem;
-        color: ${({theme}) => theme.COLORS.BLACK}
-    }
+    color: #fff;
+    border-bottom: 1px solid #fff; 
+`
+export const Title_h2 = styled.div`
+    font-weight: 700;
+    color: #fff;
+    font-size: 24px;
 `
 
-export const ContentTop = styled.div`
+export const WrapperUserProfile = styled.div`
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 3.2rem;
+    justify-content: center;
+    gap: 32px;
 `
 
-export const ContentBottom = styled.div`
+export const LeftUserProfile = styled.div`
     width: 100%;
+    max-width: 450px;
     display: flex;
-    flex-direction: column;
-    gap: 2.2rem;
-
-    > button {
-    font-weight: bold;
-	color: ${({theme}) => theme.COLORS.WHITE};
-	border: none;
-	padding: 16px 24px;
-	border-radius: 8px;
-	transition: 20ms ease-in-out;
-	background: ${({theme}) => theme.COLORS.AZUL_ESCURO};
-    }
-`
-
-export const ContentTopLeft = styled.div`
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 3.2rem;
-    width: 100%;
-    max-width: 45rem;
+    gap: 32px;
+    position: relative;
 `
 
-export const Image = styled.div`
+export const ImgProfile = styled.div`
+    border: 2px solid ${({theme}) => theme.COLORS.GRAY};
     width: 100%;
-	max-width: 20rem;
-	height: 20rem;
+	max-width: 200px;
+	height: 200px;
 	cursor: pointer;
 
 	> img {
-		border-radius: 1.6rem;
-        width: 20rem;
+		border-radius: 16px;
+
+		:hover {
+			border: 5px solid #0079af;
+		}
 	}
 `
-
-export const RightText = styled.div`
-	width: 100%;
-	max-width: 186px;
-	display: flex;
-	flex-direction: column;
-	gap: 0.8rem;
-`
-
-export const TitleRight = styled.p`
-	color: #000000;
-	font-size: 16px;
-	font-weight: 700;
-    `
-
-export const ParagraphRight = styled.p`
-	color: ${({theme}) => theme.COLORS.BLACK};
-	font-size: 13px;
-	font-weight: 400;
-    `
-
-export const ContentTopRight = styled.div`
+export const BoxText = styled.div`
+    width: 100%;
+    max-width: 186px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 0.6rem;
-    width: 100%;
-
-    > input {
-        width: 100%;
-        background-color: transparent;
-        border-radius: 0.6rem;
-        padding: 2rem;
-        border: 2px solid ${({theme}) => theme.COLORS.BLACK};
-        font-size: 1.4rem;
-        color: ${({theme}) => theme.COLORS.AZUL_ESCURO}
-    }
+    gap: 8px;
 `
 
-export const Message = styled.div`
-    width: 100%;
+export const TitleBoxText = styled.div`
+    color: #ffffff;
+	font-size: 16px;
+	font-weight: 700;
+`
 
-    > textarea {
+export const TextBoxTxt = styled.div`
+    color: #ffffff;
+	font-size: 13px;
+	font-weight: 400;
+`
+
+export const RightUserProfile = styled.div`
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+
+
+    > input {
+        padding: 20px;
         background-color: transparent;
-        border: 2px solid ${({theme}) => theme.COLORS.BLACK};
-        height: 15rem;
-        width: 100%;
-        padding: 2rem;
+        border: 2px solid ${({theme}) => theme.COLORS.GRAY};
+        border-radius: 10px;
     }
 `
