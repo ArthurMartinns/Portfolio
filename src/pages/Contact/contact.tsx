@@ -29,8 +29,8 @@ function Contact() {
                       </S.BoxText>
                     </S.LeftUserProfile>
                     <S.RightUserProfile>
-                      <input type="text" />
-                      <input type="text" />
+                      <input type="text" placeholder='Digite seu nome:' />
+                      <input type="text" placeholder='Digite o assunto:' />
                     </S.RightUserProfile>
                   </S.WrapperUserProfile>
                 </S.ContentMain>

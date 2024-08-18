@@ -14,7 +14,7 @@ export const Header = styled.div`
 export const Title = styled.div`
     font-size: 1.8rem;
     font-weight: 700;
-    color: ${({theme}) => theme.COLORS.AZUL_CLARO};
+    color: ${({theme}) => theme.COLORS.WHITE};
 `
 
 export const SideMenu = styled.div`
