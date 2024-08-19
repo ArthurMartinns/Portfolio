@@ -17,7 +17,7 @@ function Contact() {
                   <S.WrapperUserProfile>
                     <S.LeftUserProfile>
                       <S.ImgProfile>
-                        <img src="" alt="" />
+                        <img src="me.png" alt="" />
                       </S.ImgProfile>
                       <S.BoxText>
                         <S.TitleBoxText>
@@ -33,9 +33,19 @@ function Contact() {
                       <input type="text" placeholder='Digite o assunto:' />
                     </S.RightUserProfile>
                   </S.WrapperUserProfile>
+                    <S.TitleTextArea>
+                      <S.h2_TextArea>
+                        Digite a mensagem abaixo: 
+                      </S.h2_TextArea>
+                    </S.TitleTextArea>
+                    <textarea placeholder='Digite uma mensagem:' name="" id=""/>
+                    <S.Button_Send>
+                      ENVIAR
+                    </S.Button_Send>
                 </S.ContentMain>
               </S.BodyProfile>
             </S.WrapperProfile>
+
           </Container>
         </S.Profile>
       </>
