@@ -65,6 +65,9 @@ export const ListItems = styled.li`
         font-weight: 600;
         font-size: 1.4rem;
         color: ${({theme}) => theme.COLORS.GRAY};
+            &:hover {
+                color: ${({theme}) => theme.COLORS.WHITE};
+            }
     }
 `
 

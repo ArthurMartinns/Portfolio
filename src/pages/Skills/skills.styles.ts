@@ -27,6 +27,7 @@ export const Right = styled.div`
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 2rem;
     align-self: center;
+    padding: 1rem;
 `
 
 export const Itens = styled.div`
@@ -40,6 +41,10 @@ export const Itens = styled.div`
 
     > svg {
         font-size: 4em;
+    }
+
+    &:hover {
+        box-shadow: 0 0 1em gold;
     }
 `
 
