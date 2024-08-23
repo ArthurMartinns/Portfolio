@@ -1,15 +1,34 @@
+import { useState } from 'react'
 import Container from '../../components/Container/container.view'
 import * as S from './projects.styles'
 
 function Projects() {
+
+  const [isfront, setisFront] = useState(false)
+
+  const showProject = () => {
+    setisFront(!isfront)
+  }
     return (
       <Container>
         <S.Container>
           <S.Content>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
+            <S.CardProjects onMouseOver={showProject}>
+              {isfront && (
+                <S.Teste>
+                  .
+                </S.Teste>
+              )}
+            </S.CardProjects>
+            <S.CardProjects>
+              
+            </S.CardProjects>
+            <S.CardProjects>
+              
+            </S.CardProjects>
+            <S.CardProjects>
+              
+            </S.CardProjects>
           </S.Content>
         </S.Container>
       </Container>

@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.div`
     width: 100%; 
     height: 80vh;
-    border: 1px solid ${({theme}) => theme.COLORS.WHITE};
 `
 export const Content = styled.div`
     display: grid;
@@ -13,6 +12,18 @@ export const Content = styled.div`
 
     > div{
         border: 1px solid #fff;
-        height: 20rem;
+        height: 28rem;
+        display: flex;
+        align-items: end;
     }
+`
+
+export const CardProjects = styled.div`
+    border: 2px solid #fff;
+`
+
+export const Teste = styled.div`
+    width: 100%;
+    height: 5rem;
+    background-color: skyblue;
 `
