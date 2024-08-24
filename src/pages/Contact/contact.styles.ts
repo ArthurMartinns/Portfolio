@@ -2,8 +2,10 @@ import styled from "styled-components";
 
 export const Profile = styled.div`
     width: 100%;
+    height: 82vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin-top: 1rem;
 `

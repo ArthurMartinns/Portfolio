@@ -9,11 +9,12 @@ function Projects() {
   const showProject = () => {
     setisFront(!isfront)
   }
+
     return (
       <Container>
         <S.Container>
           <S.Content>
-            <S.CardProjects onMouseOver={showProject}>
+            <S.CardProjects onMouseEnter={showProject}>
               {isfront && (
                 <S.Teste>
                   .

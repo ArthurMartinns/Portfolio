@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const Content = styled.div`
     width: 100%;
-    margin-top: 6rem;
+    height: 82vh;
+    padding-top: 5rem;
 `
 
 export const Wrapper = styled.div`
@@ -23,8 +24,8 @@ export const Left = styled.div`
 export const Right = styled.div`
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 2rem;
     align-self: center;
     padding: 1rem;
