@@ -29,6 +29,6 @@ export const CardProjects = styled.div`
 export const Teste = styled.div`
     width: 100%;
     height: 100%;
-    background-color: skyblue;
+    background-color: red;
     transition: 20S;
 `
