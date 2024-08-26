@@ -16,9 +16,14 @@ export const Content = styled.div`
 
     > div{
         border: 1px solid #fff;
-        height: 28rem;
+        height: 25rem;
         display: flex;
         align-items: end;
+    }
+
+    @media (max-width: 1024px) {
+        grid-template-columns: 1fr;
+        margin: 15rem 5rem 0rem 5rem;
     }
 `
 
@@ -36,7 +41,7 @@ export const Teste = styled.div`
 export const ContentCard = styled.div`
     height: 100%;
     display: grid;
-    grid-template-rows: 5.5rem 1fr 1fr;    
+    grid-template-rows: 5.5rem 1fr 1fr; 
 `
 
 export const ContentCardTop = styled.div`

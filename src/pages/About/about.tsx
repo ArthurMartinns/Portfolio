@@ -9,10 +9,10 @@ function About() {
         <S.Content>
           <S.Wrapper>
             <S.Left>
-      
+              <p>teste</p>
             </S.Left>
             <S.Right>
-              <img src="" alt="" />
+              {/* <img src="imgAbout.png" alt="" /> */}
             </S.Right>
           </S.Wrapper>
         </S.Content>

@@ -2,19 +2,17 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     width: 100%;
-    height: 90vh;
-
     display: flex;
     align-items: center;
     justify-content: center;
 
-    border: 1px solid #000;
 `
 
 export const Content = styled.div `
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 `
 
 export const Wrapper = styled.div`
@@ -22,8 +20,8 @@ export const Wrapper = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: 2px solid #000;
-    background-color: #fefefe;
+    background-color:  rgba(22, 22, 22, 0.8);
+    height: 80vh;
 `
 
 export const Left = styled.div`
@@ -33,6 +31,9 @@ export const Left = styled.div`
 `
 
 export const Right = styled.div`
-
-
+    background-color: white;
+    
+    img {
+        background-blend-mode: darken;
+    }
 `
