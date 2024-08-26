@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Container from '../../components/Container/container.view'
 import * as S from './projects.styles'
+import { SiCsharp, SiJavascript, SiReact, SiTypescript } from 'react-icons/si'
 
 function Projects() {
 
@@ -54,11 +55,33 @@ function Projects() {
         <S.Container>
           <S.Content>
 
-
             <S.CardProjects onMouseEnter={showProject} onMouseLeave={clear}>
               {isfront && (
                 <S.Teste>
-                  .
+                  <S.ContentCard>
+                    <S.ContentCardTop>
+                      <h2>
+                        Sistema
+                      </h2>
+                      <a href="/">Acesse aqui</a>
+                    </S.ContentCardTop>
+                    <S.ContentCardMid>
+                      <p>Tecnologias utilizadas: </p>
+                      <div>
+                        <SiReact/>
+                      </div>
+                    </S.ContentCardMid>
+                    <S.ContentCardBottom>
+                      <div>
+                        <h4>
+                          Descrição:
+                        </h4>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ut, ad eveniet beatae eligendi distinctio adipisci mollitia ratione aliquam, quas vitae expedita eos, aut laborum aspernatur fugiat architecto ab! Atque?
+                        </p>
+                      </div>
+                    </S.ContentCardBottom>
+                  </S.ContentCard>
                 </S.Teste>
               )}
             </S.CardProjects>
@@ -66,28 +89,96 @@ function Projects() {
             <S.CardProjects onMouseEnter={showProject2} onMouseLeave={clear2}>
               {isfront2 && (
                 <S.Teste>
-                  .
+                  <S.ContentCard>
+                    <S.ContentCardTop>
+                      <h2>
+                        Landing Page
+                      </h2>
+                      <a href="/">Acesse aqui</a>
+                    </S.ContentCardTop>
+                    <S.ContentCardMid>
+                      <p>Tecnologias utilizadas: </p>
+                      <div>
+                        <SiJavascript/>
+                      </div>
+                    </S.ContentCardMid>
+                    <S.ContentCardBottom>
+                      <div>
+                        <h4>
+                          Descrição:
+                        </h4>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ut, ad eveniet beatae eligendi distinctio adipisci mollitia ratione aliquam, quas vitae expedita eos, aut laborum aspernatur fugiat architecto ab! Atque?
+                        </p>
+                      </div>
+                    </S.ContentCardBottom>
+                  </S.ContentCard>
                 </S.Teste>
               )}
             </S.CardProjects>
-
 
             <S.CardProjects onMouseEnter={showProject3} onMouseLeave={clear3}>
               {isfront3 && (
                 <S.Teste>
-                  .
+                  <S.ContentCard>
+                    <S.ContentCardTop>
+                      <h2>
+                        Calculadora
+                      </h2>
+                      <a href="/">Acesse aqui</a>
+                    </S.ContentCardTop>
+                    <S.ContentCardMid>
+                      <p>Tecnologias utilizadas: </p>
+                      <div>
+                        <SiCsharp/>
+                      </div>
+                    </S.ContentCardMid>
+                    <S.ContentCardBottom>
+                      <div>
+                        <h4>
+                          Descrição:
+                        </h4>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ut, ad eveniet beatae eligendi distinctio adipisci mollitia ratione aliquam, quas vitae expedita eos, aut laborum aspernatur fugiat architecto ab! Atque?
+                        </p>
+                      </div>
+                    </S.ContentCardBottom>
+                  </S.ContentCard>
                 </S.Teste>
               )}
             </S.CardProjects>
-
 
             <S.CardProjects onMouseEnter={showProject4} onMouseLeave={clear4}>
               {isfront4 && (
                 <S.Teste>
-                  .
+                  <S.ContentCard>
+                    <S.ContentCardTop>
+                      <h2>
+                        Controle Financeiro
+                      </h2>
+                      <a href="/">Acesse aqui</a>
+                    </S.ContentCardTop>
+                    <S.ContentCardMid>
+                      <p>Tecnologias utilizadas: </p>
+                      <div>
+                        <SiTypescript/>
+                      </div>
+                    </S.ContentCardMid>
+                    <S.ContentCardBottom>
+                      <div>
+                        <h4>
+                          Descrição:
+                        </h4>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ut, ad eveniet beatae eligendi distinctio adipisci mollitia ratione aliquam, quas vitae expedita eos, aut laborum aspernatur fugiat architecto ab! Atque?
+                        </p>
+                      </div>
+                    </S.ContentCardBottom>
+                  </S.ContentCard>
                 </S.Teste>
               )}
             </S.CardProjects>
+              
           </S.Content>
         </S.Container>
       </Container>

@@ -8,7 +8,6 @@ export default createGlobalStyle`
     }
 
     html {
-        text-decoration: none;
         list-style: none;
         font-family: "Sora", sans-serif;
         font-size: 62.5%;
@@ -17,7 +16,6 @@ export default createGlobalStyle`
 
     a {
         cursor: pointer;
-        text-decoration: none;
         color: #000;
         font-size: 20px;
     }

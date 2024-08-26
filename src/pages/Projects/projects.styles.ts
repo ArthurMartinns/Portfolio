@@ -29,6 +29,76 @@ export const CardProjects = styled.div`
 export const Teste = styled.div`
     width: 100%;
     height: 100%;
-    background-color: red;
-    transition: 20S;
+    background-color: rgba(22, 22, 22, 0.8);
+    padding: 2rem;
+`
+
+export const ContentCard = styled.div`
+    height: 100%;
+    display: grid;
+    grid-template-rows: 5.5rem 1fr 1fr;    
+`
+
+export const ContentCardTop = styled.div`
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    h2 {
+        color: ${({theme}) => theme.COLORS.WHITE};
+        font-size: 1.6rem;
+    }
+
+    a {
+        color: ${({theme}) => theme.COLORS.GRAY};
+        font-size: 1.2rem;
+    }
+`
+
+export const ContentCardMid = styled.div`
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    p {
+        color: ${({theme}) => theme.COLORS.WHITE};
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+
+    div {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 0.8rem;
+        
+        svg {
+            color: ${({theme}) => theme.COLORS.WHITE};
+            font-size:  2.5rem;
+        }
+    }
+`
+
+export const ContentCardBottom = styled.div`
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+
+        h4 {
+            font-size: 1.4rem;
+            color: ${({theme}) => theme.COLORS.WHITE};
+            font-weight: 400;;
+        }
+        P {
+            font-size: 1.2rem;
+            color: ${({theme}) => theme.COLORS.WHITE};
+            text-align: justify;
+            font-weight: 300;
+        }
+    }
+
 `

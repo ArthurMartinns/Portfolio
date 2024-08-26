@@ -7,8 +7,7 @@ export const Header = styled.div`
     align-items: center;
     justify-content: space-between;
     background-color: ${({theme}) => theme.COLORS.BACKGROUND};
-    padding-top: 2rem;
-    height: 12.0rem;
+    height: 10rem;
 `
 
 export const Title = styled.div`
@@ -64,6 +63,7 @@ export const ListItems = styled.li`
     > a {
         font-weight: 600;
         font-size: 1.4rem;
+        text-decoration: none;
         color: ${({theme}) => theme.COLORS.GRAY};
             &:hover {
                 color: ${({theme}) => theme.COLORS.WHITE};
