@@ -23,7 +23,7 @@ export const Content = styled.div`
 
     @media (max-width: 1024px) {
         grid-template-columns: 1fr;
-        margin: 15rem 5rem 0rem 5rem;
+        margin: 15rem 1rem 0rem 1rem;
     }
 `
 
@@ -65,7 +65,7 @@ export const ContentCardMid = styled.div`
 
     display: flex;
     flex-direction: column;
-    gap: 1.6rem;
+    gap: 0.8rem;
 
     p {
         color: ${({theme}) => theme.COLORS.WHITE};

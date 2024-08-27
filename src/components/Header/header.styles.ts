@@ -20,7 +20,7 @@ export const SideMenu = styled.div`
     position: absolute;
     right: 0;
     top: 0;
-    background-color: #D9D9D9;
+    background-color: ${({theme}) => theme.COLORS.DARK};
     width: 100%;
     height: 100vh;
     transition: all 0.5s ease-in-out;
@@ -32,11 +32,13 @@ export const SideMenu = styled.div`
     
     
     > a {
-        font-size: 3.6rem;
+        font-size: 2.8rem;
+        color: ${({theme}) => theme.COLORS.WHITE};
+        text-decoration: none;
     }
 
     > a:hover{
-        background-color: #000;
+        background-color: ${({theme}) => theme.COLORS.BLACK};
         color: ${({theme}) => theme.COLORS.WHITE};
         border-radius: 1rem;
     }
@@ -48,6 +50,7 @@ export const Close = styled.div`
     top: 0;
     right: 0;
     margin: 1rem 1rem;
+    color: ${({theme}) => theme.COLORS.WHITE};
 `
 
 export const List = styled.ul`
@@ -56,6 +59,10 @@ export const List = styled.ul`
     flex-direction: row;
     align-items: end;
     gap: 1.8rem;
+
+    @media screen and (max-width: 768px){
+        display: none;
+    }
 `
 
 export const ListItems = styled.li`
@@ -77,4 +84,12 @@ export const Right = styled.div`
     align-items: center;
     gap: 1.8rem;
 
+`
+
+export const Responsivo = styled.div`
+    display: none;
+
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
 `
