@@ -25,15 +25,91 @@ export const Wrapper = styled.div`
 `
 
 export const Left = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+
+
+    gap: 1rem;
+
+    > div p{
+        color: #fff;
+    }
+
+    padding: 3rem;
 `
 
 export const Right = styled.div`
-    background-color: white;
-    
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     img {
         background-blend-mode: darken;
+        filter: grayscale(100%);
+        box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
     }
+`
+
+export const LeftTop = styled.div`
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.6rem;
+
+    p:first-child {
+        font-size: 2.4rem;
+        color: ${({theme}) => theme.COLORS.GRAY};
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 3.2rem;
+        font-weight: 800;
+    }
+
+    p:last-child{
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+
+`
+
+export const LeftMid = styled.div`
+    width: 100%;
+    font-size: 1.2rem;
+    max-width: 45rem;
+    line-height: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    
+    > p {
+        font-weight: 400;
+        color: ${({theme}) => theme.COLORS.GRAY};
+    }
+`
+
+
+export const LeftBottom = styled.div`
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: .8rem;
+`
+
+
+export const Itens = styled.div`
+    width: 5rem;
+    height: 5rem;
+    border: 2px solid #fff;
 `
