@@ -12,13 +12,13 @@ function About() {
             <S.Left>
               <S.LeftTop>
                 <p>
-                  Who am I?
+                  Quem sou eu?
                 </p>
                 <p>
-                  About
+                  Sobre
                 </p>
                 <p>
-                  Back - end Developer
+                  Desenvovledor Back - End
                 </p>
               </S.LeftTop>
 
