@@ -112,4 +112,13 @@ export const Itens = styled.div`
     width: 5rem;
     height: 5rem;
     border: 2px solid #fff;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        font-size: 3em;
+        color: ${({theme}) => theme.COLORS.GRAY};
+    }
 `

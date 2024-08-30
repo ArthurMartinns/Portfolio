@@ -1,3 +1,4 @@
+import { FaEnvelope, FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 import Container from '../../components/Container/container.view'
 import * as S from './about.styles'
 
@@ -29,16 +30,16 @@ function About() {
 
               <S.LeftBottom>
                   <S.Itens>
-                    1
+                    <FaLinkedin/>
                   </S.Itens>
                   <S.Itens>
-                    2
+                    <FaGithub/>
                   </S.Itens>
                   <S.Itens>
-                    3
+                    <FaEnvelope/>
                   </S.Itens>
                   <S.Itens>
-                    4
+                    <FaWhatsapp/>
                   </S.Itens>
               </S.LeftBottom>
 
