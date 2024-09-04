@@ -82,13 +82,10 @@ export const ImgProfile = styled.div`
 	max-width: 20rem;
 	height: 20rem;
 	cursor: pointer;
-
+    overflow: hidden;
 	> img {
         width: 20rem;
         height: 20rem;
-		:hover {
-			border: 5px solid #0079af;
-		}
 	}
 `
 export const BoxText = styled.div`

@@ -1,33 +1,23 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Content = styled.div`
     width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`   
+    border: 2px solid #fff;
+    `   
+export const wrapper = styled.div`
+    width: 100%;
 
-export const Wrapper = styled.div`
-    width: 100%;
+
     display: flex;
     flex-direction: row;
 `
 
-export const Left = styled.div`
+export const left = styled.div`
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    > h2 {
-        font-size: 6.4rem;
-        color: ${({theme}) => theme.COLORS.AZUL_CLARO};
-    }
-
-    > h3 {
-        font-size: 9.6rem;
-        color: ${({theme}) => theme.COLORS.AZUL_ESCURO};
-    }
+    border: 3px solid #988;   
 `
 
-export const Right = styled.div`
+export const right = styled.div`
+    width: 100%;
+    border: 3px solid #899;
 `
