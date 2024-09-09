@@ -7,6 +7,10 @@ export default createGlobalStyle`
         box-sizing: border-box;
     }
 
+    body {
+        height: 100vh;
+    }
+
     html {
         list-style: none;
         font-family: "Sora", sans-serif;

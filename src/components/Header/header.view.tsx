@@ -53,14 +53,39 @@ function HeaderView() {
                                 onClick={toggleMenu}   
                                 fontSize={20}
                                 color='#ffffff'
-                                />
+                            />
                             {isOpen && (
                                 <S.SideMenu>
-                                    <Link to={'/'} onClick={toggleMenu}>Home</Link>
-                                    <Link to={'/About'} onClick={toggleMenu}>About</Link>
-                                    <Link to={'/Skills'} onClick={toggleMenu}>Skills</Link>
-                                    <Link to={'/Projects'} onClick={toggleMenu}>Projects</Link>
-                                    <Link to={'/Contact'} onClick={toggleMenu}>Contact</Link>
+                                    <Link 
+                                        to={'/'} 
+                                        onClick={toggleMenu}
+                                    >
+                                        Home
+                                    </Link>
+                                    <Link 
+                                        to={'/About'} 
+                                        onClick={toggleMenu}
+                                    >
+                                        About
+                                    </Link>
+                                    <Link 
+                                        to={'/Skills'} 
+                                        onClick={toggleMenu}
+                                    >
+                                        Skills
+                                    </Link>
+                                    <Link 
+                                        to={'/Projects'} 
+                                        onClick={toggleMenu}
+                                    >
+                                        Projects
+                                    </Link>
+                                    <Link 
+                                        to={'/Contact'} 
+                                        onClick={toggleMenu}
+                                    >
+                                        Contact
+                                    </Link>
                                     
                                     <S.Close>
                                         <MdClose onClick={toggleMenu} size={40}/>
