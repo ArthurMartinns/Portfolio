@@ -23,7 +23,7 @@ function Home() {
             </S.contentLeft>
           </S.left>
           <S.right>
-            
+            <img src="meHome.png" alt="" />
           </S.right>
         </S.wrapper>
       </S.Content>
