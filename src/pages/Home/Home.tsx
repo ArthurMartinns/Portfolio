@@ -15,7 +15,7 @@ function Home() {
                 Eu sou Arthur Martins
               </S.mainText>
               <S.headline>
-                Back - end Developer
+                Web Developer
               </S.headline>
               <S.btnHire>
                 Hire me

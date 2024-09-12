@@ -31,11 +31,11 @@ export const right = styled.div`
 
 export const headline = styled.p`
     color: ${({theme}) => theme.COLORS.WHITE};
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     font-weight: 600;
 `
 export const mainText = styled.h1`
-    font-size: 4.6rem;
+    font-size: 5.2rem;
     color: ${({theme}) => theme.COLORS.AZUL_CLARO};
     font-weight: 600;
 `

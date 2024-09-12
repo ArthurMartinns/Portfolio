@@ -29,10 +29,8 @@ export const Left = styled.div`
 
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 1rem;
 
 
-    gap: 1rem;
 
     > div p{
         color: #fff;
@@ -62,7 +60,7 @@ export const LeftTop = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 1.6rem;
+    gap: 1.2rem;
 
     p:first-child {
         font-size: 2.4rem;
