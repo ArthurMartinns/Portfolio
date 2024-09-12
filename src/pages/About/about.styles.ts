@@ -27,9 +27,10 @@ export const Wrapper = styled.div`
 export const Left = styled.div`
     width: 100%;
 
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
 
 
     > div p{
@@ -63,13 +64,13 @@ export const LeftTop = styled.div`
     gap: 1.2rem;
 
     p:first-child {
-        font-size: 2.4rem;
+        font-size: 2.6rem;
         color: ${({theme}) => theme.COLORS.GRAY};
         font-weight: 700;
     }
 
     p {
-        font-size: 3.2rem;
+        font-size: 2.2rem;
         font-weight: 800;
     }
 
@@ -109,7 +110,6 @@ export const LeftBottom = styled.div`
 export const Itens = styled.div`
     width: 5rem;
     height: 5rem;
-    border: 2px solid #fff;
     border-radius: 1rem;
     display: flex;
     align-items: center;

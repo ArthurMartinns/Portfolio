@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Content = styled.div`
     width: 100%;
     height: 82vh;
-    padding-top: 5rem;
+    padding: 5rem .3rem;
 `
 
 export const Wrapper = styled.div`
