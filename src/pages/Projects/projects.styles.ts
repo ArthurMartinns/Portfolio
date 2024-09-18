@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "../../styles/breakpoints";
 
 export const Container = styled.div`
     width: 100%; 
@@ -21,7 +22,7 @@ export const Content = styled.div`
         align-items: end;
     }
 
-    @media (max-width: 1024px) {
+    @media (max-width: ${breakpoints.tablet}) {
         grid-template-columns: 1fr;
         margin: 15rem 1rem 0rem 1rem;
     }

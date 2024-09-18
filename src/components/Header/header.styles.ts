@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "../../styles/breakpoints";
 
 export const Header = styled.div`
     width: 100%;
@@ -60,7 +61,7 @@ export const List = styled.ul`
     align-items: end;
     gap: 1.8rem;
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: ${breakpoints.mobileLarge}){
         display: none;
     }
 `
@@ -89,7 +90,7 @@ export const Right = styled.div`
 export const Responsivo = styled.div`
     display: none;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: ${breakpoints.mobileLarge}) {
         display: block;
     }
 `

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "../../styles/breakpoints";
 
 export const Content = styled.div`
     width: 100%;
@@ -11,7 +12,7 @@ export const Wrapper = styled.div`
     flex-direction: row;
     justify-content: space-between;
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: ${breakpoints.mobileLarge}){
         flex-direction: column;
     }
 `
@@ -34,7 +35,7 @@ export const Right = styled.div`
     align-self: center;
     padding: 1rem;
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: ${breakpoints.mobileLarge}){
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         margin-top: 1rem;
