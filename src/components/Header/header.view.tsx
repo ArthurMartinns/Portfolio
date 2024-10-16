@@ -42,12 +42,7 @@ function HeaderView() {
                                     Projects
                                 </Link>
                             </S.ListItems>
-                            <S.ListItems>
-                                <Link to={'/Contact'}>
-                                    Contact
-                                </Link>
-                            </S.ListItems>
-                        </S.List>
+                        </S.List>                  
                         <S.Responsivo>
                             <GiHamburgerMenu 
                                 onClick={toggleMenu}   

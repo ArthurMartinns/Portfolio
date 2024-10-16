@@ -1,4 +1,4 @@
-import { FaEnvelope, FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
+// import { FaEnvelope, FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 import Container from '../../components/Container/container.view'
 import * as S from './about.styles'
 
@@ -14,21 +14,9 @@ function About() {
                 <p>
                   Quem sou eu?
                 </p>
-                <p>
-                  Sobre
-                </p>
-                <p>
-                  Desenvovledor Back - End
-                </p>
               </S.LeftTop>
 
-              <S.LeftMid>
-                <p>
-                  Olá, meu nome é Arthur Martins. Possuo conhecimento em diversas tecnologias, dentre elas, destaca - se a criação de interfaces web com react, styled components, tailwindCSS, TypeScript. E também, o desenvolvimento de Apis, com o C# juntamente com o auxílio do .Net. Atualmente, estou realizando o curso de Sistemas da Informação, que vem contribuindo bastante com o aprendizado dessas skills. Além disso, cursos extracurriculares que ajudam no enriquecimento.
-                </p>
-              </S.LeftMid>
-
-              <S.LeftBottom>
+              {/* <S.LeftBottom>
                   <S.Itens>
                     <FaLinkedin/>
                   </S.Itens>
@@ -41,7 +29,7 @@ function About() {
                   <S.Itens>
                     <FaWhatsapp/>
                   </S.Itens>
-              </S.LeftBottom>
+              </S.LeftBottom> */}
 
             </S.Left>
             <S.Right>

@@ -20,8 +20,8 @@ export const Wrapper = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     background-color:  rgba(22, 22, 22, 0.8);
-    height: 80vh;
 `
 
 export const Left = styled.div`
@@ -81,42 +81,42 @@ export const LeftTop = styled.div`
 
 `
 
-export const LeftMid = styled.div`
-    width: 100%;
-    font-size: 1.2rem;
-    max-width: 45rem;
-    line-height: 1.8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: justify;
+// export const LeftMid = styled.div`
+//     width: 100%;
+//     font-size: 1.2rem;
+//     max-width: 45rem;
+//     line-height: 1.8rem;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     text-align: justify;
     
-    > p {
-        font-weight: 400;
-        color: ${({theme}) => theme.COLORS.GRAY};
-    }
-`
+//     > p {
+//         font-weight: 400;
+//         color: ${({theme}) => theme.COLORS.GRAY};
+//     }
+// `
 
 
-export const LeftBottom = styled.div`
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: .8rem;
-`
+// export const LeftBottom = styled.div`
+//     width: 100%;
+//     display: flex;
+//     align-items: center;
+//     flex-direction: row;
+//     gap: .8rem;
+// `
 
 
-export const Itens = styled.div`
-    width: 5rem;
-    height: 5rem;
-    border-radius: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+// export const Itens = styled.div`
+//     width: 5rem;
+//     height: 5rem;
+//     border-radius: 1rem;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
 
-    svg {
-        font-size: 3em;
-        color: ${({theme}) => theme.COLORS.GRAY};
-    }
-`
+//     svg {
+//         font-size: 3em;
+//         color: ${({theme}) => theme.COLORS.GRAY};
+//     }
+// `
