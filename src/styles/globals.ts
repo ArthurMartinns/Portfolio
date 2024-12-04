@@ -15,7 +15,7 @@ export default createGlobalStyle`
         list-style: none;
         font-family: "Sora", sans-serif;
         font-size: 62.5%;
-        background-color: ${({theme}) => theme.COLORS.BACKGROUND};
+        background-color: ${({ theme }) => theme.COLORS.BACKGROUND};
     }
 
     a {
@@ -23,5 +23,21 @@ export default createGlobalStyle`
         color: #000;
         font-size: 20px;
     }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: ${({ theme }) => theme.COLORS.BACKGROUND};
+}
+
+::-webkit-scrollbar-thumb {
+  background:#263238;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: white;
+}
 
 `

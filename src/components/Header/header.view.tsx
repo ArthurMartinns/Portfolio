@@ -1,99 +1,77 @@
-import * as S from './header.styles'
-import { Link } from 'react-router-dom'
-import Container from '../Container/container.view'
 import { useState } from 'react'
-import { GiHamburgerMenu } from 'react-icons/gi'
-import { MdClose } from 'react-icons/md'
+import Container from '../../components/Container/container.view'
+import * as S from './header.styles'
+import { IoIosMenu } from "react-icons/io";
+import { IoCloseSharp } from "react-icons/io5";
 
-function HeaderView() {
+function Header() {
 
-    const [isOpen, setIsOpen] = useState<boolean>(false)
+    const [open, isOpen] = useState(false)
 
     const toggleMenu = () => {
-        setIsOpen(!isOpen)
+        isOpen(!open)
     }
 
-    return(
+    console.log(toggleMenu)
+
+    return (
         <>
-            <Container>
-                <S.Header>
-                    <S.Title>
-                        &lt;AM/	&gt;
-                    </S.Title>
-                    <S.Right>
-                        <S.List>
-                            <S.ListItems>
-                                <Link to={'/'}>
-                                    Home
-                                </Link>
-                            </S.ListItems>
-                            <S.ListItems>
-                                <Link to={'/About'}>
-                                    About
-                                </Link>
-                            </S.ListItems>
-                            <S.ListItems>
-                                <Link to={'/Skills'}>
-                                    Skills
-                                </Link>
-                            </S.ListItems>
-                            <S.ListItems>
-                                <Link to={'/Projects'}>
-                                    Projects
-                                </Link>
-                            </S.ListItems>
-                        </S.List>                  
+            <S.Header>
+                <Container>
+                    <S.Content>
+                        <S.Left>
+                            &lt;Am/&gt;
+                        </S.Left>
+                        <S.Right>
+                            <S.Links>
+                                About
+                            </S.Links>
+                            <S.Links>
+                                Skills
+                            </S.Links>
+                            <S.Links>
+                                Projects
+                            </S.Links>
+                            <S.Links>
+                                Contact
+                            </S.Links>
+                        </S.Right>
                         <S.Responsivo>
-                            <GiHamburgerMenu 
-                                onClick={toggleMenu}   
+                            <IoIosMenu
+                                onClick={toggleMenu}
+                                color='#fff'
                                 fontSize={20}
-                                color='#ffffff'
                             />
-                            {isOpen && (
-                                <S.SideMenu>
-                                    <Link 
-                                        to={'/'} 
-                                        onClick={toggleMenu}
-                                    >
-                                        Home
-                                    </Link>
-                                    <Link 
-                                        to={'/About'} 
-                                        onClick={toggleMenu}
-                                    >
-                                        About
-                                    </Link>
-                                    <Link 
-                                        to={'/Skills'} 
-                                        onClick={toggleMenu}
-                                    >
-                                        Skills
-                                    </Link>
-                                    <Link 
-                                        to={'/Projects'} 
-                                        onClick={toggleMenu}
-                                    >
-                                        Projects
-                                    </Link>
-                                    <Link 
-                                        to={'/Contact'} 
-                                        onClick={toggleMenu}
-                                    >
-                                        Contact
-                                    </Link>
-                                    
-                                    <S.Close>
-                                        <MdClose onClick={toggleMenu} size={40}/>
-                                    </S.Close>
-                                </S.SideMenu>
-                            )}
                         </S.Responsivo>
-                    </S.Right>
-                </S.Header>
-            </Container>
+                        {open && (
+                            <S.Menu>
+                                <S.SubItens>
+                                    <S.LinksResponsivo>
+                                        About
+                                    </S.LinksResponsivo>
+                                    <S.LinksResponsivo>
+                                        Skills
+                                    </S.LinksResponsivo>
+                                    <S.LinksResponsivo>
+                                        Projects
+                                    </S.LinksResponsivo>
+                                    <S.LinksResponsivo>
+                                        Contact
+                                    </S.LinksResponsivo>
+                                    <IoCloseSharp
+                                        onClick={toggleMenu}
+                                        fontSize={20}
+                                        color='#fff'
+                                    />
+                                </S.SubItens>
+                            </S.Menu>
+                        )}
+                    </S.Content>
+                </Container>
+            </S.Header>
         </>
     )
 }
 
-export default HeaderView
+export default Header
 

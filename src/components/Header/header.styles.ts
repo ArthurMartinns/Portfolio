@@ -3,94 +3,70 @@ import { breakpoints } from "../../styles/breakpoints";
 
 export const Header = styled.div`
     width: 100%;
+`
+
+export const Content = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: ${({theme}) => theme.COLORS.BACKGROUND};
-    height: 10rem;
+    height: 10.8rem;
 `
 
-export const Title = styled.div`
+export const Left = styled.div`
+    font-weight: 600;
+    color: ${({ theme }) => theme.COLORS.AZUL_CLARO};
     font-size: 1.8rem;
-    font-weight: 700;
-    color: ${({theme}) => theme.COLORS.WHITE};
 `
 
-export const SideMenu = styled.div`
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-color: ${({theme}) => theme.COLORS.DARK};
-    width: 100%;
-    height: 100vh;
-    transition: all 0.5s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;   
-    
-    
-    > a {
-        font-size: 2.8rem;
-        color: ${({theme}) => theme.COLORS.WHITE};
-        text-decoration: none;
-    }
-
-    > a:hover{
-        background-color: ${({theme}) => theme.COLORS.BLACK};
-        color: ${({theme}) => theme.COLORS.WHITE};
-        border-radius: 1rem;
-    }
-`
-
-
-export const Close = styled.div`
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 1rem 1rem;
-    color: ${({theme}) => theme.COLORS.WHITE};
-`
-
-export const List = styled.ul`
-    list-style: none;
+export const Right = styled.ul`
     display: flex;
     flex-direction: row;
-    align-items: end;
-    gap: 1.8rem;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
 
-    @media screen and (max-width: ${breakpoints.mobileLarge}){
+    @media (max-width: ${breakpoints.mobileLarge}) {
         display: none;
     }
 `
 
-export const ListItems = styled.li`
-    list-style: none;
-    > a {
-        font-weight: 600;
-        font-size: 1.4rem;
-        text-decoration: none;
-        color: ${({theme}) => theme.COLORS.GRAY};
-            &:hover {
-                color: ${({theme}) => theme.COLORS.WHITE};
-            }
-    }
+export const Links = styled.li`
+    font-size: 1.2rem;
+    color: ${({ theme }) => theme.COLORS.WHITE};
 `
 
-export const Right = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1.8rem;
+export const Menu = styled.div`
+    background-color: #123;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 
 export const Responsivo = styled.div`
     display: none;
+    cursor: pointer;
 
-    @media screen and (max-width: ${breakpoints.mobileLarge}) {
+    @media (max-width: ${breakpoints.mobileLarge}) {
         display: block;
     }
+`
+
+export const SubItens = styled.ul`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+`
+
+export const LinksResponsivo = styled.li`
+    list-style: none;
+    font-size: 1.4rem;
+    color: ${({ theme }) => theme.COLORS.WHITE};
 `
