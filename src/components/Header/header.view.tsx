@@ -1,77 +1,104 @@
-import { useState } from 'react'
-import Container from '../../components/Container/container.view'
 import * as S from './header.styles'
-import { IoIosMenu } from "react-icons/io";
-import { IoCloseSharp } from "react-icons/io5";
+import { Link } from 'react-router-dom'
+import Container from '../Container/container.view'
+import { useState } from 'react'
+import { GiHamburgerMenu } from 'react-icons/gi'
+import { MdClose } from 'react-icons/md'
 
-function Header() {
+function HeaderView() {
 
-    const [open, isOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState<boolean>(false)
 
     const toggleMenu = () => {
-        isOpen(!open)
+        setIsOpen(!isOpen)
     }
 
-    console.log(toggleMenu)
-
-    return (
+    return(
         <>
-            <S.Header>
-                <Container>
-                    <S.Content>
-                        <S.Left>
-                            &lt;Am/&gt;
-                        </S.Left>
-                        <S.Right>
-                            <S.Links>
-                                About
-                            </S.Links>
-                            <S.Links>
-                                Skills
-                            </S.Links>
-                            <S.Links>
-                                Projects
-                            </S.Links>
-                            <S.Links>
-                                Contact
-                            </S.Links>
-                        </S.Right>
+            <Container>
+                <S.Header>
+                    <S.Title>
+                        &lt;AM/	&gt;
+                    </S.Title>
+                    <S.Right>
+                        <S.List>
+                            <S.ListItems>
+                                <Link to={'/'}>
+                                    Home
+                                </Link>
+                            </S.ListItems>
+                            <S.ListItems>
+                                <Link to={'/About'}>
+                                    About
+                                </Link>
+                            </S.ListItems>
+                            <S.ListItems>
+                                <Link to={'/Skills'}>
+                                    Skills
+                                </Link>
+                            </S.ListItems>
+                            <S.ListItems>
+                                <Link to={'/Projects'}>
+                                    Projects
+                                </Link>
+                            </S.ListItems>
+                            <S.ListItems>
+                                <Link to={'/Contact'}>
+                                    Contact
+                                </Link>
+                            </S.ListItems>
+                        </S.List>
                         <S.Responsivo>
-                            <IoIosMenu
-                                onClick={toggleMenu}
-                                color='#fff'
+                            <GiHamburgerMenu 
+                                onClick={toggleMenu}   
                                 fontSize={20}
+                                color='#ffffff'
                             />
-                        </S.Responsivo>
-                        {open && (
-                            <S.Menu>
-                                <S.SubItens>
-                                    <S.LinksResponsivo>
-                                        About
-                                    </S.LinksResponsivo>
-                                    <S.LinksResponsivo>
-                                        Skills
-                                    </S.LinksResponsivo>
-                                    <S.LinksResponsivo>
-                                        Projects
-                                    </S.LinksResponsivo>
-                                    <S.LinksResponsivo>
-                                        Contact
-                                    </S.LinksResponsivo>
-                                    <IoCloseSharp
+                            {isOpen && (
+                                <S.SideMenu>
+                                    <Link 
+                                        to={'/'} 
                                         onClick={toggleMenu}
-                                        fontSize={20}
-                                        color='#fff'
-                                    />
-                                </S.SubItens>
-                            </S.Menu>
-                        )}
-                    </S.Content>
-                </Container>
-            </S.Header>
+                                    >
+                                        Home
+                                    </Link>
+                                    <Link 
+                                        to={'/About'} 
+                                        onClick={toggleMenu}
+                                    >
+                                        About
+                                    </Link>
+                                    <Link 
+                                        to={'/Skills'} 
+                                        onClick={toggleMenu}
+                                    >
+                                        Skills
+                                    </Link>
+                                    <Link 
+                                        to={'/Projects'} 
+                                        onClick={toggleMenu}
+                                    >
+                                        Projects
+                                    </Link>
+                                    <Link 
+                                        to={'/Contact'} 
+                                        onClick={toggleMenu}
+                                    >
+                                        Contact
+                                    </Link>
+                                    
+                                    <S.Close>
+                                        <MdClose onClick={toggleMenu} size={40}/>
+                                    </S.Close>
+                                </S.SideMenu>
+                            )}
+                        </S.Responsivo>
+                    </S.Right>
+                </S.Header>
+            </Container>
         </>
     )
 }
 
-export default Header
+export default HeaderView
 

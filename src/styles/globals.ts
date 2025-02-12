@@ -24,20 +24,4 @@ export default createGlobalStyle`
         font-size: 20px;
     }
 
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: ${({ theme }) => theme.COLORS.BACKGROUND};
-}
-
-::-webkit-scrollbar-thumb {
-  background:#263238;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: white;
-}
-
 `
