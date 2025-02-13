@@ -1,7 +1,7 @@
 import { useState } from "react"
 import Container from "../../components/Container/container.view"
 import * as S from './skills.styles'
-import { FaBootstrap, FaCss3, FaFigma, FaGit, FaHtml5, FaJs, FaNode, FaReact } from "react-icons/fa";
+import { FaBootstrap, FaCss3, FaGit, FaHtml5, FaJs, FaReact } from "react-icons/fa";
 import { SiStyledcomponents, SiTailwindcss, SiTypescript } from "react-icons/si";
 
 function Skills() {
@@ -56,29 +56,12 @@ function Skills() {
       `)
   }
 
-  const EighthChange = () => {
-    setText(`
-        Figma: É uma ferramenta de design colaborativo usada para criar protótipos, interfaces de usuário, e fluxos de design. Figma permite que equipes trabalhem simultaneamente em projetos e é muito utilizado no design de aplicativos e sites.
-      `)
-  }
-
   const NinethChange = () => {
     setText(`
         Bootstrap: É um framework front-end que fornece componentes e utilitários CSS e JavaScript prontos para uso, facilitando a criação de sites responsivos e consistentes. Bootstrap é popular por sua simplicidade e suporte a layouts adaptáveis.
       `)
   }
 
-  const TenthChange = () => {
-    setText(`
-        C#: É uma linguagem de programação moderna e orientada a objetos desenvolvida pela Microsoft. C# é usada para desenvolvimento de aplicações desktop, web, mobile, e jogos, especialmente na plataforma .NET.
-      `)
-  }
-
-  const EleventhChange = () => {
-    setText(`
-      Node.js: É um ambiente de execução JavaScript do lado do servidor. Node.js permite criar aplicações web escaláveis, usando a linguagem JavaScript tanto no front-end quanto no back-end.
-      `)
-  }
 
   const TwelvthChange = () => {
     setText(`
@@ -123,17 +106,8 @@ function Skills() {
             <S.Itens onMouseOver={SeventhChange} onMouseLeave={Clear}>
               <SiTailwindcss />
             </S.Itens>
-            <S.Itens onMouseOver={EighthChange} onMouseLeave={Clear}>
-              <FaFigma />
-            </S.Itens>
             <S.Itens onMouseOver={NinethChange} onMouseLeave={Clear}>
               <FaBootstrap />
-            </S.Itens>
-            <S.Itens onMouseOver={TenthChange} onMouseLeave={Clear}>
-              {/* <SiCsharp/> */}
-            </S.Itens>
-            <S.Itens onMouseOver={EleventhChange} onMouseLeave={Clear}>
-              <FaNode />
             </S.Itens>
             <S.Itens onMouseOver={TwelvthChange} onMouseLeave={Clear}>
               <FaGit />

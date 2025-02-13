@@ -55,7 +55,10 @@ function Projects() {
                     <h2>
                       Sistema
                     </h2>
-                    <a href="/">Acesse aqui</a>
+                    <S.rightCard>
+                      <a href="/">Acesse o repositório</a>
+                      <a href="/">Acesse o deploy</a>
+                    </S.rightCard>
                   </S.ContentCardTop>
                   <S.ContentCardMid>
                     <p>Tecnologias utilizadas: </p>
@@ -86,7 +89,10 @@ function Projects() {
                     <h2>
                       Landing Page
                     </h2>
-                    <a href="/">Acesse aqui</a>
+                    <S.rightCard>
+                      <a href="/">Acesse o repositório</a>
+                      <a href="/">Acesse o deploy</a>
+                    </S.rightCard>
                   </S.ContentCardTop>
                   <S.ContentCardMid>
                     <p>Tecnologias utilizadas: </p>
@@ -117,13 +123,13 @@ function Projects() {
                     <h2>
                       Calculadora
                     </h2>
-                    <a href="/">Acesse aqui</a>
+                    <S.rightCard>
+                      <a href="/">Acesse o repositório</a>
+                      <a href="/">Acesse o deploy</a>
+                    </S.rightCard>
                   </S.ContentCardTop>
                   <S.ContentCardMid>
                     <p>Tecnologias utilizadas: </p>
-                    <div>
-                      {/* <SiCsharp /> */}
-                    </div>
                   </S.ContentCardMid>
                   <S.ContentCardBottom>
                     <div>
@@ -148,7 +154,10 @@ function Projects() {
                     <h2>
                       Sistema de controle financeiro
                     </h2>
-                    <a href="/">Acesse aqui</a>
+                    <S.rightCard>
+                      <a href="/">Acesse o repositório</a>
+                      <a href="/">Acesse o deploy</a>
+                    </S.rightCard>
                   </S.ContentCardTop>
                   <S.ContentCardMid>
                     <p>Tecnologias utilizadas: </p>

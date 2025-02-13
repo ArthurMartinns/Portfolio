@@ -107,3 +107,8 @@ export const ContentCardBottom = styled.div`
     }
 
 `
+export const rightCard = styled.div`
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+`
