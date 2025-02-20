@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Container from '../../components/Container/container.view'
 import * as S from './projects.styles'
-import { SiJavascript, SiReact, SiTypescript } from 'react-icons/si'
+import { SiJavascript, SiReact, SiStyledcomponents, SiTypescript } from 'react-icons/si'
 
 function Projects() {
 
@@ -42,28 +42,29 @@ function Projects() {
     setisFront4(false)
   }
 
-
   return (
     <Container>
       <S.Container>
         <S.Content>
           <S.CardProjects onMouseEnter={showProject} onMouseLeave={clear}>
             {isfront && (
-              <S.Teste>
+              <S.Background>
                 <S.ContentCard>
                   <S.ContentCardTop>
                     <h2>
-                      Sistema
+                      toDoList
                     </h2>
                     <S.rightCard>
-                      <a href="/">Acesse o repositório</a>
-                      <a href="/">Acesse o deploy</a>
+                      <a href="/" target='blank'>Acesse o repositório</a>
+                      <a href="/" target='blank'>Acesse o deploy</a>
                     </S.rightCard>
                   </S.ContentCardTop>
                   <S.ContentCardMid>
                     <p>Tecnologias utilizadas: </p>
                     <div>
                       <SiReact />
+                      <SiTypescript />
+                      <SiStyledcomponents />
                     </div>
                   </S.ContentCardMid>
                   <S.ContentCardBottom>
@@ -77,13 +78,13 @@ function Projects() {
                     </div>
                   </S.ContentCardBottom>
                 </S.ContentCard>
-              </S.Teste>
+              </S.Background>
             )}
           </S.CardProjects>
 
           <S.CardProjects onMouseEnter={showProject2} onMouseLeave={clear2}>
             {isfront2 && (
-              <S.Teste>
+              <S.Background>
                 <S.ContentCard>
                   <S.ContentCardTop>
                     <h2>
@@ -111,13 +112,13 @@ function Projects() {
                     </div>
                   </S.ContentCardBottom>
                 </S.ContentCard>
-              </S.Teste>
+              </S.Background>
             )}
           </S.CardProjects>
 
           <S.CardProjects onMouseEnter={showProject3} onMouseLeave={clear3}>
             {isfront3 && (
-              <S.Teste>
+              <S.Background>
                 <S.ContentCard>
                   <S.ContentCardTop>
                     <h2>
@@ -142,13 +143,13 @@ function Projects() {
                     </div>
                   </S.ContentCardBottom>
                 </S.ContentCard>
-              </S.Teste>
+              </S.Background>
             )}
           </S.CardProjects>
 
           <S.CardProjects onMouseEnter={showProject4} onMouseLeave={clear4}>
             {isfront4 && (
-              <S.Teste>
+              <S.Background>
                 <S.ContentCard>
                   <S.ContentCardTop>
                     <h2>
@@ -176,7 +177,7 @@ function Projects() {
                     </div>
                   </S.ContentCardBottom>
                 </S.ContentCard>
-              </S.Teste>
+              </S.Background>
             )}
           </S.CardProjects>
         </S.Content>

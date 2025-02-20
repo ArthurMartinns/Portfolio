@@ -31,7 +31,7 @@ export const CardProjects = styled.div`
     border: 2px solid #fff;
 `
 
-export const Teste = styled.div`
+export const Background = styled.div`
     width: 100%;
     height: 100%;
     background-color: rgba(22, 22, 22, 0.8);
