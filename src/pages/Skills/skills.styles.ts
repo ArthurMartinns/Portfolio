@@ -48,7 +48,6 @@ export const Itens = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    color: ${({theme}) => theme.COLORS.WHITE};
 
     > svg {
         font-size: 4em;
@@ -61,16 +60,13 @@ export const Itens = styled.div`
 
 export const Text_left = styled.div`
     font-size: 2.4rem;
-    color: ${({theme}) => theme.COLORS.WHITE};
 `
 
 export const P_Left = styled.div`
     font-size: 1.6rem;
-    color: ${({theme}) => theme.COLORS.GRAY};
 `
 
 export const Descricao = styled.div`
-    color: ${({theme}) => theme.COLORS.WHITE};
     font-size: 1.3rem;
     text-align: justify;
     max-width: 45rem;

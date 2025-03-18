@@ -15,7 +15,6 @@ export default createGlobalStyle`
         list-style: none;
         font-family: "Sora", sans-serif;
         font-size: 62.5%;
-        background-color: ${({ theme }) => theme.COLORS.BACKGROUND};
     }
 
     a {

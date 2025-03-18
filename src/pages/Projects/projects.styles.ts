@@ -51,12 +51,10 @@ export const ContentCardTop = styled.div`
     justify-content: space-between;
 
     h2 {
-        color: ${({ theme }) => theme.COLORS.WHITE};
         font-size: 1.6rem;
     }
 
     a {
-        color: ${({ theme }) => theme.COLORS.GRAY};
         font-size: 1.2rem;
     }
 `
@@ -68,7 +66,6 @@ export const ContentCardMid = styled.div`
     gap: 0.8rem;
 
     p {
-        color: ${({ theme }) => theme.COLORS.WHITE};
         font-size: 1.4rem;
         font-weight: 400;
     }
@@ -80,7 +77,6 @@ export const ContentCardMid = styled.div`
         gap: 0.8rem;
         
         svg {
-            color: ${({ theme }) => theme.COLORS.WHITE};
             font-size:  2.5rem;
         }
     }
@@ -95,12 +91,10 @@ export const ContentCardBottom = styled.div`
 
         h4 {
             font-size: 1.4rem;
-            color: ${({ theme }) => theme.COLORS.WHITE};
             font-weight: 400;;
         }
         P {
             font-size: 1.2rem;
-            color: ${({ theme }) => theme.COLORS.WHITE};
             text-align: justify;
             font-weight: 300;
         }

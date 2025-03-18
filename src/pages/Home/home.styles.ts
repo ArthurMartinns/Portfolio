@@ -23,13 +23,11 @@ export const right = styled.div`
 `
 
 export const headline = styled.p`
-    color: ${({ theme }) => theme.COLORS.WHITE};
     font-size: 2.5rem;
     font-weight: 400;
 `
 export const mainText = styled.h1`
     font-size: 42px;
-    color: ${({ theme }) => theme.COLORS.AZUL_CLARO};
     font-weight: 600;
 `
 
