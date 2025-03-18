@@ -6,7 +6,6 @@ import Contact from "./pages/Contact/contact"
 import Layout from "./Layout"
 import Home from "./pages/Home/Home"
 
-
 function App() {
     return (
         <BrowserRouter>
