@@ -17,18 +17,13 @@ function HeaderView() {
             <Container>
                 <S.Header>
                     <S.Title>
-                        &lt;ArthurMartins/&gt;
+                        &lt;AM/&gt;
                     </S.Title>
                     <S.Right>
                         <S.List>
                             <S.ListItems>
                                 <a href="">
-                                    Home
-                                </a>
-                            </S.ListItems>
-                            <S.ListItems>
-                                <a href="">
-                                    About
+                                    Sobre
                                 </a>
                             </S.ListItems>
                             <S.ListItems>
@@ -38,12 +33,12 @@ function HeaderView() {
                             </S.ListItems>
                             <S.ListItems>
                                 <a href="">
-                                    Projects
+                                    Projetos
                                 </a>
                             </S.ListItems>
                             <S.ListItems>
                                 <a href="">
-                                    Contact
+                                    Contato
                                 </a>
                             </S.ListItems>
                         </S.List>
@@ -55,11 +50,6 @@ function HeaderView() {
                             />
                             {isOpen && (
                                 <S.SideMenu>
-                                    <a 
-                                        onClick={toggleMenu}
-                                    >
-                                        Home
-                                    </a>
                                     <a 
                                         onClick={toggleMenu}
                                     >

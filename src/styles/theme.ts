@@ -135,11 +135,4 @@ export const theme = {
     },
   };
   
-  // Utility function to get nested theme values
-  export const getThemeValue = (path: string): any => {
-    return path.split('.').reduce((acc: any, part: string) => {
-      return acc && acc[part] ? acc[part] : undefined;
-    }, theme);
-  };
-  
   export default theme;
