@@ -1,5 +1,4 @@
 import * as S from './header.styles'
-import { Link } from 'react-router-dom'
 import Container from '../Container/container.view'
 import { useState } from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi'
@@ -18,74 +17,69 @@ function HeaderView() {
             <Container>
                 <S.Header>
                     <S.Title>
-                        &lt;AM/	&gt;
+                        &lt;ArthurMartins/&gt;
                     </S.Title>
                     <S.Right>
                         <S.List>
                             <S.ListItems>
-                                <Link to={'/'}>
+                                <a href="">
                                     Home
-                                </Link>
+                                </a>
                             </S.ListItems>
                             <S.ListItems>
-                                <Link to={'/About'}>
+                                <a href="">
                                     About
-                                </Link>
+                                </a>
                             </S.ListItems>
                             <S.ListItems>
-                                <Link to={'/Skills'}>
+                                <a href="">
                                     Skills
-                                </Link>
+                                </a>
                             </S.ListItems>
                             <S.ListItems>
-                                <Link to={'/Projects'}>
+                                <a href="">
                                     Projects
-                                </Link>
+                                </a>
                             </S.ListItems>
                             <S.ListItems>
-                                <Link to={'/Contact'}>
+                                <a href="">
                                     Contact
-                                </Link>
+                                </a>
                             </S.ListItems>
                         </S.List>
                         <S.Responsivo>
                             <GiHamburgerMenu 
                                 onClick={toggleMenu}   
                                 fontSize={20}
-                                color='#ffffff'
+                                color='#000'
                             />
                             {isOpen && (
                                 <S.SideMenu>
-                                    <Link 
-                                        to={'/'} 
+                                    <a 
                                         onClick={toggleMenu}
                                     >
                                         Home
-                                    </Link>
-                                    <Link 
-                                        to={'/About'} 
+                                    </a>
+                                    <a 
                                         onClick={toggleMenu}
                                     >
                                         About
-                                    </Link>
-                                    <Link 
-                                        to={'/Skills'} 
+                                    </a>
+                                    <a 
                                         onClick={toggleMenu}
                                     >
                                         Skills
-                                    </Link>
-                                    <Link 
-                                        to={'/Projects'} 
+                                    </a>
+                                    <a 
                                         onClick={toggleMenu}
                                     >
                                         Projects
-                                    </Link>
-                                    <Link 
-                                        to={'/Contact'} 
+                                    </a>
+                                    <a 
                                         onClick={toggleMenu}
                                     >
                                         Contact
-                                    </Link>
+                                    </a>
                                     
                                     <S.Close>
                                         <MdClose onClick={toggleMenu} size={40}/>

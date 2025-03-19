@@ -26,8 +26,8 @@ export const SideMenu = styled.div`
     align-items: center;
     justify-content: center;
     gap: 40px;   
-    
-    
+    color: ${props => props.theme.colors.text.tertiary};
+    background-color:  ${props => props.theme.colors.background.tertiary};
     > a {
         font-size: 2.8rem;
         text-decoration: none;
@@ -61,10 +61,14 @@ export const List = styled.ul`
 export const ListItems = styled.li`
     list-style: none;
     > a {
-        font-weight: 600;
+        font-weight: 400;
         font-size: 1.4rem;
         text-decoration: none;
-         
+        color: ${props => props.theme.colors.text.tertiary};
+
+        &:hover {
+            color: ${props => props.theme.colors.text.primary}
+        }
     }
 `
 
