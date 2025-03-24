@@ -20,25 +20,25 @@ function Skills() {
 
     const Skills = {
         FrontEnd: [
-            { name: 'HTML', level: 100, icon: <FaHtml5 size={18} color='#2563eb' /> , description: 'Estruturação semântica e acessibilidade'},
-            { name: 'CSS', level: 100, icon: <FaCss3Alt size={18} color='#2563eb' /> , description: 'Layouts responsivos e animações'},
-            { name: 'JavaScript', level: 100, icon: <IoLogoJavascript size={18} color='#2563eb' />, description: 'ES6+, DOM, Async/Await'},
+            { name: 'HTML', level: 100, icon: <FaHtml5 size={18} color='#2563eb' />, description: 'Estruturação semântica e acessibilidade' },
+            { name: 'CSS', level: 95, icon: <FaCss3Alt size={18} color='#2563eb' />, description: 'Layouts responsivos e animações' },
+            { name: 'JavaScript', level: 76, icon: <IoLogoJavascript size={18} color='#2563eb' />, description: 'ES6+, DOM, Async/Await' },
             { name: 'TypeScript', level: 88, icon: <SiTypescript size={18} color='#2563eb' />, description: 'Tipagem estática, interfaces, generics' },
-            { name: 'React', level: 100, icon: <FaReact size={18} color='#2563eb' /> , description: 'Hooks, Context, Redux'},
-            { name: 'Tailwind Css', level: 100, icon: <RiTailwindCssFill size={18} color='#2563eb' /> ,description: 'Mobile-first CSS'},
-            { name: 'Styled Components', level: 100, icon: <SiStyledcomponents size={18} color='#2563eb' />, description: 'CSS-in-JS'},
-            { name: 'Bootstrap', level: 100, icon: <FaBootstrap size={18} color='#2563eb' />, description: 'Framework CSS'},
+            { name: 'React', level: 82, icon: <FaReact size={18} color='#2563eb' />, description: 'Hooks, Context, Redux' },
+            { name: 'Tailwind Css', level: 71, icon: <RiTailwindCssFill size={18} color='#2563eb' />, description: 'Mobile-first CSS' },
+            { name: 'Styled Components', level: 87, icon: <SiStyledcomponents size={18} color='#2563eb' />, description: 'CSS-in-JS' },
+            { name: 'Bootstrap', level: 100, icon: <FaBootstrap size={18} color='#2563eb' />, description: 'Framework CSS' },
         ],
         BackEnd: [
-            { name: 'Nodejs', level: 100, icon: <FaNodeJs size={18} color='#2563eb'/>, description: 'Express, APIs RESTful'},
-            { name: 'C#', level: 85, icon: <TbBrandCSharp size={18} color='#2563eb'/>, description: '.NET, ASP.NET Core, Entity Framework' },
+            { name: 'Nodejs', level: 40, icon: <FaNodeJs size={18} color='#2563eb' />, description: 'Express, APIs RESTful' },
+            { name: 'C#', level: 20, icon: <TbBrandCSharp size={18} color='#2563eb' />, description: '.NET, ASP.NET Core, Entity Framework' },
         ],
         'Controle de versão': [
-            { name: 'Git', level: 100, icon: <FaGit size={18} color='#2563eb'/>, description: 'Fluxo de trabalho, branches, CI/CD'}
+            { name: 'Git', level: 92, icon: <FaGit size={18} color='#2563eb' />, description: 'Fluxo de trabalho, branches, CI/CD' }
         ],
         'Ui Libraries': [
-            { name: 'Material-UI', level: 82, icon: <FiBox size={18} color='#2563eb'/>, description: 'Componentes React com Material Design' },
-            { name: 'Chakra UI', level: 80, icon: <FiBox size={18} color='#2563eb'/>, description: 'Biblioteca de componentes acessíveis' },
+            { name: 'Material-UI', level: 100, icon: <FiBox size={18} color='#2563eb' />, description: 'Componentes React com Material Design' },
+            { name: 'Chakra UI', level: 100, icon: <FiBox size={18} color='#2563eb' />, description: 'Biblioteca de componentes acessíveis' },
         ],
     }
 
@@ -48,13 +48,13 @@ function Skills() {
             <S.Container>
                 <Container>
                     <S.SectionSkills>
-                        <Title text={'Minhas Skills'} Icon={FaRegFileCode}/>
+                        <Title text={'Minhas Skills'} Icon={FaRegFileCode} />
                         <S.BottomSkills>
                             <S.BoxItensA>
                                 <S.BoxItensTitle>
                                     Front - end
                                 </S.BoxItensTitle>
-                                {Skills.FrontEnd.map((item, ) => (
+                                {Skills.FrontEnd.map((item,) => (
                                     <>
                                         <S.BoxItensSkills>
                                             <S.BoxItensSkillsRow>
@@ -69,7 +69,7 @@ function Skills() {
                                                 </span>
                                             </S.BoxItensSkillsRow>
                                             <S.ProgressBarContainer>
-                                                <S.ProgressBarFill width={item.level}/>
+                                                <S.ProgressBarFill width={item.level} />
                                             </S.ProgressBarContainer>
                                             <S.Description>
                                                 {item.description}
@@ -82,7 +82,7 @@ function Skills() {
                                 <S.BoxItensTitle>
                                     Back - end
                                 </S.BoxItensTitle>
-                                {Skills.BackEnd.map((item, ) => (
+                                {Skills.BackEnd.map((item,) => (
                                     <>
                                         <S.BoxItensSkills>
                                             <S.BoxItensSkillsRow>
@@ -97,7 +97,7 @@ function Skills() {
                                                 </span>
                                             </S.BoxItensSkillsRow>
                                             <S.ProgressBarContainer>
-                                                <S.ProgressBarFill width={item.level}/>
+                                                <S.ProgressBarFill width={item.level} />
                                             </S.ProgressBarContainer>
                                             <S.Description>
                                                 {item.description}
@@ -110,7 +110,7 @@ function Skills() {
                                 <S.BoxItensTitle>
                                     Controle de versão
                                 </S.BoxItensTitle>
-                                {Skills['Controle de versão'].map((item, ) => (
+                                {Skills['Controle de versão'].map((item,) => (
                                     <>
                                         <S.BoxItensSkills>
                                             <S.BoxItensSkillsRow>
@@ -125,7 +125,7 @@ function Skills() {
                                                 </span>
                                             </S.BoxItensSkillsRow>
                                             <S.ProgressBarContainer>
-                                                <S.ProgressBarFill width={item.level}/>
+                                                <S.ProgressBarFill width={item.level} />
                                             </S.ProgressBarContainer>
                                             <S.Description>
                                                 {item.description}
@@ -138,7 +138,7 @@ function Skills() {
                                 <S.BoxItensTitle>
                                     Bibliotecas Ui
                                 </S.BoxItensTitle>
-                                {Skills['Ui Libraries'].map((item, ) => (
+                                {Skills['Ui Libraries'].map((item,) => (
                                     <>
                                         <S.BoxItensSkills>
                                             <S.BoxItensSkillsRow>
@@ -153,7 +153,7 @@ function Skills() {
                                                 </span>
                                             </S.BoxItensSkillsRow>
                                             <S.ProgressBarContainer>
-                                                <S.ProgressBarFill width={item.level}/>
+                                                <S.ProgressBarFill width={item.level} />
                                             </S.ProgressBarContainer>
                                             <S.Description>
                                                 {item.description}
