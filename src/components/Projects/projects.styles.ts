@@ -15,3 +15,12 @@ export const ProjectContent = styled.div`
     align-items: flex-start;
     gap: 2rem;
 `
+
+export const ProjectsItens = styled.div`
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+`

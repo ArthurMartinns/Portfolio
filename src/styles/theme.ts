@@ -29,7 +29,6 @@ export const theme = {
         inverse: '#ffffff',
       },
       
-      
       border: {
         light: '#e5e7eb',
         medium: '#d1d5db',

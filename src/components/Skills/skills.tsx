@@ -54,7 +54,7 @@ function Skills() {
                                 <S.BoxItensTitle>
                                     Front - end
                                 </S.BoxItensTitle>
-                                {Skills.FrontEnd.map((item,) => (
+                                {Skills.FrontEnd.map((item) => (
                                     <>
                                         <S.BoxItensSkills>
                                             <S.BoxItensSkillsRow>

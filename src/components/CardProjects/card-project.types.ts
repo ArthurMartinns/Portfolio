@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
-
 export interface CardProjectsProps {
-    children: ReactNode,
+    title: string,
+    description: string,
+    img: string,
 }
