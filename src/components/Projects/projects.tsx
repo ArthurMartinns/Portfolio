@@ -9,32 +9,44 @@ function Projects() {
         {
             title: 'Finanças',
             description: 'Uma plataforma web para controle financeiro pessoal, permitindo acompanhar receitas, despesas e gerar relatórios detalhados para melhor planejamento financeiro.',
-            img: 'assets/bgProjects.png'
+            img: 'assets/bgProjects.png',
+            linkRepositorio: '',
+            deploy: ''
         },
         {
             title: 'Ecommerce',
             description: 'Um sistema de e-commerce moderno e responsivo, com catálogo de produtos, carrinho de compras, checkout seguro e integração com meios de pagamento.',
-            img: 'assets/bgProjects.png'
+            img: 'assets/bgProjects.png',
+            linkRepositorio: '',
+            deploy: ''
         },
         {
             title: 'Landing Page',
             description: 'Uma landing page otimizada para conversão, com design moderno, responsivo e elementos interativos para apresentar serviços ou produtos de forma atraente.',
-            img: 'assets/bgProjects.png'
+            img: 'assets/bgProjects.png',
+            linkRepositorio: '',
+            deploy: ''
         },
         {
             title: 'Finanças',
             description: 'Uma plataforma web para controle financeiro pessoal, permitindo acompanhar receitas, despesas e gerar relatórios detalhados para melhor planejamento financeiro.',
-            img: 'assets/bgProjects.png'
+            img: 'assets/bgProjects.png',
+            linkRepositorio: '',
+            deploy: ''
         },
         {
             title: 'Ecommerce',
             description: 'Um sistema de e-commerce moderno e responsivo, com catálogo de produtos, carrinho de compras, checkout seguro e integração com meios de pagamento.',
-            img: 'assets/bgProjects.png'
+            img: 'assets/bgProjects.png',
+            linkRepositorio: '',
+            deploy: ''
         },
         {
             title: 'Landing Page',
             description: 'Uma landing page otimizada para conversão, com design moderno, responsivo e elementos interativos para apresentar serviços ou produtos de forma atraente.',
-            img: 'assets/bgProjects.png'
+            img: 'assets/bgProjects.png',
+            linkRepositorio: '',
+            deploy: ''
         }
     ]
 
@@ -51,6 +63,8 @@ function Projects() {
                                 title={projeto.title}
                                 description={projeto.description}
                                 img={projeto.img}
+                                linkRepositorio={projeto.linkRepositorio}
+                                deploy={projeto.deploy}
                             />
                         ))}
                     </S.ProjectsItens>

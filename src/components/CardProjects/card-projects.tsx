@@ -4,7 +4,9 @@ import { CardProjectsProps } from './card-project.types'
 function CardProject({
     title,
     description,
-    img
+    img,
+    linkRepositorio,
+    deploy
 }: CardProjectsProps) {
     return (
         <>
@@ -20,11 +22,11 @@ function CardProject({
                         {description}
                     </S.Description>
                     <S.Links>
-                        <S.TextLink>
-                            Teste
+                        <S.TextLink href={linkRepositorio} target={'_blank'}>
+                            Acesse o repositório
                         </S.TextLink>
-                        <S.TextLink>
-                            Teste
+                        <S.TextLink href={deploy} target={'_blank'}>
+                            Confira o deploy
                         </S.TextLink>
                     </S.Links>
                 </S.Bottom>

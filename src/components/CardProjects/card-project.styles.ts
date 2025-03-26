@@ -21,7 +21,7 @@ export const Image = styled.div`
 export const Bottom = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
     padding: 2rem;
 `
 
@@ -33,14 +33,14 @@ export const Title = styled.h2`
 export const Description = styled.p`
     font-size: 1.2rem;
     font-weight: 400;
-    color: ${props => props.theme.colors.border.dark};
+    color: ${props => props.theme.colors.text.tertiary};
 `
 
 export const Links = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
 `
 export const TextLink = styled.a`
     text-decoration: none;
