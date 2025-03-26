@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const CardProjectsContainer = styled.div`
-    background-color: ${props => props.theme.colors.background.tertiary};
-    border: 2px solid ${props => props.theme.colors.background.tertiary};
+    background-color: ${props => props.theme.colors.background.secondary};
+    border: 2px solid ${props => props.theme.colors.background.secondary};
     width: 100%;
     max-width: 350px;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 20px;
 `
 
 export const Image = styled.div`
@@ -44,7 +44,11 @@ export const Links = styled.div`
 `
 export const TextLink = styled.a`
     text-decoration: none;
-    color: ${props => props.theme.colors.text.tertiary};
+    color: ${props => props.theme.colors.status.info};
     font-weight: 300;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
 `

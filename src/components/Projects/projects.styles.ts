@@ -12,7 +12,7 @@ export const ProjectContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 2rem;
+    gap: 2.5rem;
 `
 
 export const ProjectsItens = styled.div`

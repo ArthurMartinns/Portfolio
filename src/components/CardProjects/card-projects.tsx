@@ -1,5 +1,7 @@
+import { SiGithub } from 'react-icons/si'
 import * as S from './card-project.styles'
 import { CardProjectsProps } from './card-project.types'
+import { FaExternalLinkAlt } from 'react-icons/fa'
 
 function CardProject({
     title,
@@ -23,9 +25,11 @@ function CardProject({
                     </S.Description>
                     <S.Links>
                         <S.TextLink href={linkRepositorio} target={'_blank'}>
+                            <SiGithub />
                             Acesse o repositório
                         </S.TextLink>
                         <S.TextLink href={deploy} target={'_blank'}>
+                            <FaExternalLinkAlt />
                             Confira o deploy
                         </S.TextLink>
                     </S.Links>

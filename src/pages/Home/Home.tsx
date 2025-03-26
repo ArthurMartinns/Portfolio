@@ -1,3 +1,4 @@
+import About from '../../components/About/about'
 import Hero from '../../components/Hero/hero.view'
 import Projects from '../../components/Projects/projects'
 import Skills from '../../components/Skills/skills'
@@ -8,6 +9,7 @@ function Home() {
     <>
       <S.Body>
         <Hero />
+        <About />
         <Skills />
         <Projects />
       </S.Body>
