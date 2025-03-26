@@ -15,4 +15,54 @@ export const AboutContent = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 2.5rem;
+`
+
+export const WrapperAbout = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+`
+
+export const LeftAbout = styled.div`
+    width: 100%;
+
+    div {
+        width: 100%;
+        height: 250px;
+        border: 1px solid #000;
+    }
+`
+
+export const RightAbout = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 1rem;
+    width: 100%;
+`
+
+export const RightAboutItem = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+`
+export const RightAboutItemTop = styled.div`
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+
+    p {
+        color: ${props => props.theme.colors.text.primary};
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+`
+export const RightAboutItemBottom = styled.p`
+    font-size: 1.2rem;
+    color: ${props => props.theme.colors.text.tertiary};
 `
