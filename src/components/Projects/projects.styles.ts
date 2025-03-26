@@ -6,7 +6,6 @@ export const ProjectsContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #000;
 `
 export const ProjectContent = styled.div`
     width: 100%;
@@ -23,4 +22,7 @@ export const ProjectsItens = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+
+    gap: 2rem;
 `

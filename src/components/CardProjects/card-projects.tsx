@@ -17,8 +17,16 @@ function CardProject({
                         {title}
                     </S.Title>
                     <S.Description>
-                        {description}   
+                        {description}
                     </S.Description>
+                    <S.Links>
+                        <S.TextLink>
+                            Teste
+                        </S.TextLink>
+                        <S.TextLink>
+                            Teste
+                        </S.TextLink>
+                    </S.Links>
                 </S.Bottom>
             </S.CardProjectsContainer>
         </>

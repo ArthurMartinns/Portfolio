@@ -35,3 +35,16 @@ export const Description = styled.p`
     font-weight: 400;
     color: ${props => props.theme.colors.border.dark};
 `
+
+export const Links = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+`
+export const TextLink = styled.a`
+    text-decoration: none;
+    color: ${props => props.theme.colors.text.tertiary};
+    font-weight: 300;
+    font-size: 1.1rem;
+`
