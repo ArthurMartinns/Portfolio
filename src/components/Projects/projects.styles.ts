@@ -6,6 +6,8 @@ export const ProjectsContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: ${props => props.theme.colors.gradient.secondary.from};
+
 `
 export const ProjectContent = styled.div`
     width: 100%;

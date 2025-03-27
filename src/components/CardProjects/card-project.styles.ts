@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CardProjectsContainer = styled.div`
-    background-color: ${props => props.theme.colors.background.secondary};
+    background-color: ${props => props.theme.colors.background.primary};
     border: 2px solid ${props => props.theme.colors.background.secondary};
     width: 100%;
     max-width: 350px;

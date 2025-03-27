@@ -1,4 +1,3 @@
-import { FaUser } from 'react-icons/fa6'
 import Container from '../Container/container.view'
 import Title from '../Title/title'
 import * as S from './about.styles'
@@ -30,7 +29,7 @@ function About() {
         <S.AboutContainer>
             <Container>
                 <S.AboutContent>
-                    <Title text={'Sobre mim'} Icon={FaUser} />
+                    <Title text={'Sobre mim'} Icon={IoPersonOutline} />
                     <S.WrapperAbout>
                         <S.LeftAbout>
                             {/* <img src="me.jpeg" alt="" /> */}

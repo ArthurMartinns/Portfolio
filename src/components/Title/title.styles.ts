@@ -8,7 +8,7 @@ export const Container = styled.div`
 `
 
 export const Title = styled.div`
-    font-size: 3rem;
+    font-size: 2.2rem;
     color: ${props => props.theme.colors.text.primary};
     font-weight: bold;
 `

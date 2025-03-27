@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    background-color: ${props => props.theme.colors.gradient.secondary.from};
     width: 100%;
     padding: 4rem;
     display: flex;
@@ -28,7 +27,7 @@ export const BottomSkills = styled.div`
 `
 
 export const BoxItensA = styled.div`
-    background-color: ${props => props.theme.colors.background.primary};
+   background-color: ${props => props.theme.colors.gradient.secondary.from};
     padding: 3rem;
     border-radius: 30px;
     display: flex;
@@ -37,7 +36,7 @@ export const BoxItensA = styled.div`
     grid-area: A;
 `
 export const BoxItensB = styled.div`
-    background-color: ${props => props.theme.colors.background.primary};
+    background-color: ${props => props.theme.colors.gradient.secondary.from};
     padding: 3rem;
     border-radius: 30px;
     display: flex;
@@ -46,7 +45,7 @@ export const BoxItensB = styled.div`
     grid-area: B;
 `
 export const BoxItensC = styled.div`
-    background-color: ${props => props.theme.colors.background.primary};
+    background-color: ${props => props.theme.colors.gradient.secondary.from};
     padding: 3rem;
     border-radius: 30px;
     display: flex;
@@ -55,7 +54,7 @@ export const BoxItensC = styled.div`
     grid-area: C;
 `
 export const BoxItensD = styled.div`
-    background-color: ${props => props.theme.colors.background.primary};
+    background-color: ${props => props.theme.colors.gradient.secondary.from};
     padding: 3rem;
     border-radius: 30px;
     display: flex;

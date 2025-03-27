@@ -7,6 +7,7 @@ export const AboutContainer = styled.div`
     align-items: center;
     justify-content: center;
     color: ${props => props.theme.colors.background.primary};
+    background-color: ${props => props.theme.colors.gradient.secondary.from};
 `
 
 export const AboutContent = styled.div`
@@ -31,7 +32,7 @@ export const LeftAbout = styled.div`
 
     div {
         width: 100%;
-        height: 250px;
+        height: 500px;
         border: 1px solid #000;
     }
 `

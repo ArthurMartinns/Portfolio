@@ -7,7 +7,7 @@ function Title({
 }: TitleProps) {
     return (
         <S.Container>
-            {Icon && <Icon size={28} color='#2563eb' />}
+            {Icon && <Icon size={20} color='#2563eb' />}
             <S.Title>{text}</S.Title>
         </S.Container>
     );
