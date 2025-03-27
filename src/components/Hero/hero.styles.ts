@@ -31,7 +31,7 @@ export const SectionHeroLeft = styled.div`
 `
 
 export const Title = styled.div`
-    font-size: 4.8rem;
+    font-size: 4.2rem;
     font-weight: bold;
     color: ${props => props.theme.colors.text.primary};
 
@@ -55,6 +55,8 @@ export const WrapperButtons = styled.div`
 
 export const SectionRight = styled.div`
     img {
-        border-radius: 40px;
+        border-radius: 20px;
+        width: 100%;
+        max-width: 550px;
     }
 `

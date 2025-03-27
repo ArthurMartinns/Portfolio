@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     width: 100%;
-    padding: 4rem;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 `
 
 export const SectionSkills = styled.div`
-
+    padding: 4rem 0;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -62,16 +62,6 @@ export const BoxItensD = styled.div`
     gap: 3rem;
     grid-area: D;
 `
-// export const BoxItensE = styled.div`
-//     background-color: ${props => props.theme.colors.background.primary};
-//     padding: 3rem;
-//     border-radius: 30px;
-//     display: flex;
-//     flex-direction: column;
-//     gap: 3rem;
-//     grid-area: E;
-// `
-
 export const BoxItensTitle = styled.h2`
     font-size: 1.8rem;
 `

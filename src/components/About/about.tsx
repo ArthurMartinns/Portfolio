@@ -32,8 +32,7 @@ function About() {
                     <Title text={'Sobre mim'} Icon={IoPersonOutline} />
                     <S.WrapperAbout>
                         <S.LeftAbout>
-                            {/* <img src="me.jpeg" alt="" /> */}
-                            <div />
+                            <img src="me.jpeg" alt="" />
                         </S.LeftAbout>
                         <S.RightAbout>
                             {RightAbout.map((item) => (
