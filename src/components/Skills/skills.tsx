@@ -14,8 +14,6 @@ import { SiTypescript } from 'react-icons/si';
 import { FiBox } from "react-icons/fi";
 import { TbBrandCSharp } from "react-icons/tb";
 
-
-
 function Skills() {
 
     const Skills = {
