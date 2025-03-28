@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.div`
     width: 100%;
-    height: 100vh;
+    padding: 3rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,14 +32,14 @@ export const LeftAbout = styled.div`
 
     img {
         width: 100%;
-        max-width: 500px;
+        max-width: 450px;
         border-radius: 30px;
     }
 `
 
 export const RightAbout = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     gap: 3rem;
     padding: 1rem;
@@ -54,6 +54,7 @@ export const RightAboutItem = styled.div`
     border-radius: 20px;
     padding: 4rem;
     gap: 1rem;
+    width: 100%;
 `
 export const RightAboutItemTop = styled.div`
     display: flex;

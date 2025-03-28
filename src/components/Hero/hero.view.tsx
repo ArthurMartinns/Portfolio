@@ -27,7 +27,7 @@ function Hero() {
                             </S.WrapperButtons>
                         </S.SectionHeroLeft>
                         <S.SectionRight>
-                            <img src="pcImg.avif" alt="" />
+                            <img src="me.jpeg" alt="" />
                         </S.SectionRight>
                     </S.SectionHero>
                 </S.Main>

@@ -57,6 +57,6 @@ export const SectionRight = styled.div`
     img {
         border-radius: 20px;
         width: 100%;
-        max-width: 550px;
+        max-width: 450px;
     }
 `
