@@ -13,17 +13,22 @@ export const SectionSkills = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: start;
-    gap: 2rem;
+    gap: 3rem;
 `
 
 export const BottomSkills = styled.div`
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
         "A B"
         "A C"
         "A D";
-    grid-gap: 2rem;
+    grid-gap: 2rem; */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 `
 
 export const BoxItensA = styled.div`
@@ -112,4 +117,53 @@ export const ProgressBarFill = styled.div<{ width: number }>`
 export const Description = styled.p`
     font-size: 1.2rem;
     color: ${props => props.theme.colors.text   .tertiary};
+`
+
+export const LeftSkillsDescriptions = styled.div`
+    width: 100%;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    p {
+        color: ${props => props.theme.colors.text.secondary};
+        font-size: 1.3rem;
+        max-width: 500px;
+    }
+`
+
+export const RightSkillsItens = styled.div`
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+`
+
+export const BoxSkilss = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 1rem;
+    background-color: ${props => props.theme.colors.primary[100]};
+    border-radius: 4px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 150px;
+
+    svg {
+        font-size: 50px;
+        color: ${props => props.theme.colors.gradient.primary.from};
+    }
+
+    &:hover {
+        box-shadow: 10px 5px 5px ${props => props.theme.colors.primary[200]};
+        transition: 0.3s;
+    }
+
 `

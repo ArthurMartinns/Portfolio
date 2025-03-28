@@ -1,171 +1,67 @@
-import Container from '../Container/container.view'
-import Title from '../Title/title'
-import * as S from './skills.styles'
-import { FaGit, FaRegFileCode } from "react-icons/fa";
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
-import { FaReact } from "react-icons/fa6";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { SiStyledcomponents } from "react-icons/si";
-import { FaBootstrap } from "react-icons/fa";
-import { FaNodeJs } from "react-icons/fa";
-import { SiTypescript } from 'react-icons/si';
-import { FiBox } from "react-icons/fi";
-import { TbBrandCSharp } from "react-icons/tb";
+import { useState } from 'react';
+import Container from '../Container/container.view';
+import Title from '../Title/title';
+import * as S from './skills.styles';
+import { FaRegFileCode } from 'react-icons/fa';
+import { SkillsArray } from './skills.utils';
+
+const descriptions: Record<string, string> = {
+    Html: 'HTML (HyperText Markup Language) é a linguagem padrão para a criação de páginas web. Ele permite estruturar o conteúdo de um site utilizando elementos como títulos, parágrafos, imagens, links e tabelas. Trabalha em conjunto com CSS e JavaScript para criar páginas interativas e responsivas.',
+    
+    Css: 'CSS (Cascading Style Sheets) é uma linguagem de estilo usada para definir a aparência e o layout de páginas web. Com CSS, é possível aplicar cores, fontes, espaçamentos e animações, além de criar layouts flexíveis e responsivos para diferentes tamanhos de tela.',
+    
+    JavaScript: 'JavaScript é uma linguagem de programação de alto nível usada para tornar páginas web interativas. Com JS, é possível manipular o DOM, responder a eventos do usuário, realizar requisições assíncronas e criar aplicações complexas como SPAs (Single Page Applications) e PWA (Progressive Web Apps).',
+    
+    React: 'React é uma biblioteca JavaScript de código aberto para a construção de interfaces de usuário. Ele utiliza um conceito chamado Virtual DOM para otimizar atualizações na tela, permitindo criar aplicações dinâmicas e escaláveis de maneira eficiente. React é amplamente usado no desenvolvimento de SPAs e aplicações móveis com React Native.',
+    
+    TailwindCss: 'Tailwind CSS é um framework CSS baseado em classes utilitárias que permite criar designs personalizados sem precisar escrever CSS do zero. Ele facilita a estilização ao fornecer classes pré-definidas para cores, espaçamentos, tipografia, grid e flexbox, acelerando o desenvolvimento.',
+    
+    StyledComponents: 'Styled Components é uma biblioteca para estilização de componentes em aplicações React. Utilizando a abordagem CSS-in-JS, permite escrever estilos diretamente dentro dos componentes, garantindo encapsulamento e evitando conflitos de classe.',
+    
+    BootStrap: 'Bootstrap é um framework CSS popular que fornece componentes prontos para a construção de interfaces responsivas e modernas. Ele inclui um sistema de grid flexível, botões, modais, carrosséis e outras funcionalidades que agilizam o desenvolvimento web.',
+    
+    Nodejs: 'Node.js é um ambiente de execução JavaScript no lado do servidor. Ele permite construir aplicações escaláveis, como APIs REST e servidores web em tempo real, utilizando um modelo assíncrono baseado em eventos. O Node.js é amplamente utilizado para back-end com frameworks como Express.js.',
+    
+    TypeScript: 'TypeScript é um superset do JavaScript que adiciona tipagem estática e recursos avançados para desenvolvimento seguro e escalável. Ele melhora a manutenção do código, reduz erros comuns e é amplamente adotado em projetos de grande porte, especialmente com frameworks como React e Angular.',
+    
+    'C#': 'C# é uma linguagem de programação orientada a objetos desenvolvida pela Microsoft. Muito utilizada no desenvolvimento de aplicações Windows, jogos com Unity, APIs e sistemas empresariais, C# possui forte integração com a plataforma .NET e oferece alto desempenho e segurança.',
+
+};
+
 
 function Skills() {
-
-    const Skills = {
-        FrontEnd: [
-            { name: 'HTML', level: 100, icon: <FaHtml5 size={18} color='#2563eb' />, description: 'Estruturação semântica e acessibilidade' },
-            { name: 'CSS', level: 95, icon: <FaCss3Alt size={18} color='#2563eb' />, description: 'Layouts responsivos e animações' },
-            { name: 'JavaScript', level: 76, icon: <IoLogoJavascript size={18} color='#2563eb' />, description: 'ES6+, DOM, Async/Await' },
-            { name: 'TypeScript', level: 88, icon: <SiTypescript size={18} color='#2563eb' />, description: 'Tipagem estática, interfaces, generics' },
-            { name: 'React', level: 82, icon: <FaReact size={18} color='#2563eb' />, description: 'Hooks, Context, Redux' },
-            { name: 'Tailwind Css', level: 71, icon: <RiTailwindCssFill size={18} color='#2563eb' />, description: 'Mobile-first CSS' },
-            { name: 'Styled Components', level: 87, icon: <SiStyledcomponents size={18} color='#2563eb' />, description: 'CSS-in-JS' },
-            { name: 'Bootstrap', level: 100, icon: <FaBootstrap size={18} color='#2563eb' />, description: 'Framework CSS' },
-        ],
-        BackEnd: [
-            { name: 'Nodejs', level: 40, icon: <FaNodeJs size={18} color='#2563eb' />, description: 'Express, APIs RESTful' },
-            { name: 'C#', level: 20, icon: <TbBrandCSharp size={18} color='#2563eb' />, description: '.NET, ASP.NET Core, Entity Framework' },
-        ],
-        'Controle de versão': [
-            { name: 'Git', level: 92, icon: <FaGit size={18} color='#2563eb' />, description: 'Fluxo de trabalho, branches, CI/CD' }
-        ],
-        'Ui Libraries': [
-            { name: 'Material-UI', level: 100, icon: <FiBox size={18} color='#2563eb' />, description: 'Componentes React com Material Design' },
-            { name: 'Chakra UI', level: 100, icon: <FiBox size={18} color='#2563eb' />, description: 'Biblioteca de componentes acessíveis' },
-        ],
-    }
-
+    const [description, setDescription] = useState('');
 
     return (
-        <>
-            <S.Container>
-                <Container>
-                    <S.SectionSkills>
-                        <Title text={'Minhas Skills'} Icon={FaRegFileCode} />
-                        <S.BottomSkills>
-                            <S.BoxItensA>
-                                <S.BoxItensTitle>
-                                    Front - end
-                                </S.BoxItensTitle>
-                                {Skills.FrontEnd.map((item) => (
-                                    <>
-                                        <S.BoxItensSkills>
-                                            <S.BoxItensSkillsRow>
-                                                <S.BoxItensSkillsRowLeft>
-                                                    {item.icon}
-                                                    <p>
-                                                        {item.name}
-                                                    </p>
-                                                </S.BoxItensSkillsRowLeft>
-                                                <span>
-                                                    {item.level}%
-                                                </span>
-                                            </S.BoxItensSkillsRow>
-                                            <S.ProgressBarContainer>
-                                                <S.ProgressBarFill width={item.level} />
-                                            </S.ProgressBarContainer>
-                                            <S.Description>
-                                                {item.description}
-                                            </S.Description>
-                                        </S.BoxItensSkills>
-                                    </>
-                                ))}
-                            </S.BoxItensA>
-                            <S.BoxItensB>
-                                <S.BoxItensTitle>
-                                    Back - end
-                                </S.BoxItensTitle>
-                                {Skills.BackEnd.map((item,) => (
-                                    <>
-                                        <S.BoxItensSkills>
-                                            <S.BoxItensSkillsRow>
-                                                <S.BoxItensSkillsRowLeft>
-                                                    {item.icon}
-                                                    <p>
-                                                        {item.name}
-                                                    </p>
-                                                </S.BoxItensSkillsRowLeft>
-                                                <span>
-                                                    {item.level}%
-                                                </span>
-                                            </S.BoxItensSkillsRow>
-                                            <S.ProgressBarContainer>
-                                                <S.ProgressBarFill width={item.level} />
-                                            </S.ProgressBarContainer>
-                                            <S.Description>
-                                                {item.description}
-                                            </S.Description>
-                                        </S.BoxItensSkills>
-                                    </>
-                                ))}
-                            </S.BoxItensB>
-                            <S.BoxItensC>
-                                <S.BoxItensTitle>
-                                    Controle de versão
-                                </S.BoxItensTitle>
-                                {Skills['Controle de versão'].map((item,) => (
-                                    <>
-                                        <S.BoxItensSkills>
-                                            <S.BoxItensSkillsRow>
-                                                <S.BoxItensSkillsRowLeft>
-                                                    {item.icon}
-                                                    <p>
-                                                        {item.name}
-                                                    </p>
-                                                </S.BoxItensSkillsRowLeft>
-                                                <span>
-                                                    {item.level}%
-                                                </span>
-                                            </S.BoxItensSkillsRow>
-                                            <S.ProgressBarContainer>
-                                                <S.ProgressBarFill width={item.level} />
-                                            </S.ProgressBarContainer>
-                                            <S.Description>
-                                                {item.description}
-                                            </S.Description>
-                                        </S.BoxItensSkills>
-                                    </>
-                                ))}
-                            </S.BoxItensC>
-                            <S.BoxItensD>
-                                <S.BoxItensTitle>
-                                    Bibliotecas Ui
-                                </S.BoxItensTitle>
-                                {Skills['Ui Libraries'].map((item,) => (
-                                    <>
-                                        <S.BoxItensSkills>
-                                            <S.BoxItensSkillsRow>
-                                                <S.BoxItensSkillsRowLeft>
-                                                    {item.icon}
-                                                    <p>
-                                                        {item.name}
-                                                    </p>
-                                                </S.BoxItensSkillsRowLeft>
-                                                <span>
-                                                    {item.level}%
-                                                </span>
-                                            </S.BoxItensSkillsRow>
-                                            <S.ProgressBarContainer>
-                                                <S.ProgressBarFill width={item.level} />
-                                            </S.ProgressBarContainer>
-                                            <S.Description>
-                                                {item.description}
-                                            </S.Description>
-                                        </S.BoxItensSkills>
-                                    </>
-                                ))}
-                            </S.BoxItensD>
-                        </S.BottomSkills>
-                    </S.SectionSkills>
-                </Container>
-            </S.Container>
-        </>
-    )
+        <S.Container>
+            <Container>
+                <S.SectionSkills>
+                    <Title text={'Minhas Skills'} Icon={FaRegFileCode} />
+                    <S.BottomSkills>
+                        <S.LeftSkillsDescriptions>
+                            <p>
+                                Passe o mouse por cima do ícone e descubra um pouco sobre a tecnologia...
+                            </p>
+                            <p>
+                                {description}
+                            </p>
+                        </S.LeftSkillsDescriptions>
+                        <S.RightSkillsItens>
+                            {SkillsArray.map((item) => (
+                                <S.BoxSkilss 
+                                    key={item.nome}
+                                    onMouseEnter={() => setDescription(descriptions[item.nome] ?? '')}
+                                    onMouseLeave={() => setDescription('')} 
+                                >
+                                    {item.icon}
+                                </S.BoxSkilss>
+                            ))}
+                        </S.RightSkillsItens>
+                    </S.BottomSkills>
+                </S.SectionSkills>
+            </Container>
+        </S.Container>
+    );
 }
 
-export default Skills
+export default Skills;
