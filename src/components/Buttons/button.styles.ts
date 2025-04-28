@@ -6,7 +6,8 @@ export const ButtonPrimary = styled.div`
     padding: 12px 24px;
     border-radius: 6px;
     font-size: 1.5rem;
-
+    text-align: center;
+    
     &:hover {
         opacity: 0.9;
         cursor: pointer;

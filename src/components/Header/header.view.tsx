@@ -12,7 +12,7 @@ function HeaderView() {
         setIsOpen(!isOpen)
     }
 
-    return(
+    return (
         <>
             <Container>
                 <S.Header>
@@ -43,36 +43,36 @@ function HeaderView() {
                             </S.ListItems>
                         </S.List>
                         <S.Responsivo>
-                            <GiHamburgerMenu 
-                                onClick={toggleMenu}   
+                            <GiHamburgerMenu
+                                onClick={toggleMenu}
                                 fontSize={20}
                                 color='#000'
                             />
                             {isOpen && (
                                 <S.SideMenu>
-                                    <a 
+                                    <a
                                         onClick={toggleMenu}
                                     >
                                         About
                                     </a>
-                                    <a 
+                                    <a
                                         onClick={toggleMenu}
                                     >
                                         Skills
                                     </a>
-                                    <a 
+                                    <a
                                         onClick={toggleMenu}
                                     >
                                         Projects
                                     </a>
-                                    <a 
+                                    <a
                                         onClick={toggleMenu}
                                     >
                                         Contact
                                     </a>
-                                    
+
                                     <S.Close>
-                                        <MdClose onClick={toggleMenu} size={40}/>
+                                        <MdClose onClick={toggleMenu} size={40} />
                                     </S.Close>
                                 </S.SideMenu>
                             )}

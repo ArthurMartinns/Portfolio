@@ -1,4 +1,5 @@
 import About from '../../components/About/about'
+import Contact from '../../components/Contact/contact'
 import Hero from '../../components/Hero/hero.view'
 import Projects from '../../components/Projects/projects'
 import Skills from '../../components/Skills/skills'
@@ -12,6 +13,7 @@ function Home() {
         <About />
         <Skills />
         <Projects />
+        <Contact />
       </S.Body>
     </>
   )
