@@ -1,6 +1,6 @@
-## Projeto portfolio
+## Portfólio
 
-Projeto que apresenta meu portfolio como desenvolvedor web.
+Projeto que apresenta meu portfólio como desenvolvedor web.
 
 ## Execução do projeto
 
