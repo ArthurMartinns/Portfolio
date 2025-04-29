@@ -50,15 +50,15 @@ function Contact() {
                                     <label htmlFor="">
                                         Nome:
                                     </label>
-                                    <input type="text" />
+                                    <input type="text" placeholder='Digite seu nome: ' />
                                     <label htmlFor="">
                                         Email:
                                     </label>
-                                    <input type="text" />
+                                    <input type="text" placeholder='Digite seu email: '/>
                                     <label htmlFor="">
                                         Mensagem:
                                     </label>
-                                    <textarea name="" id="" />
+                                    <textarea name="" id=""/>
                                     <Button type={TypeButtonEnum.PRIMARY} buttonText={'Enviar mensagem'} />
                                 </form>
                             </S.ItensRight>

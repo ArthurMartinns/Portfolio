@@ -26,7 +26,12 @@ export const WrapperItens = styled.div`
 
     display: flex;
     flex-direction: row;
+    gap: 1.5rem;
     justify-content: space-between;
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+    }
 `
 
 export const ItensLeft = styled.div`
