@@ -14,72 +14,75 @@ function HeaderView() {
 
     return (
         <>
-            <Container>
-                <S.Header>
-                    <S.Title>
-                        &lt;AM/&gt;
-                    </S.Title>
-                    <S.Right>
-                        <S.List>
-                            <S.ListItems>
-                                <a href="">
-                                    Sobre
-                                </a>
-                            </S.ListItems>
-                            <S.ListItems>
-                                <a href="">
-                                    Skills
-                                </a>
-                            </S.ListItems>
-                            <S.ListItems>
-                                <a href="">
-                                    Projetos
-                                </a>
-                            </S.ListItems>
-                            <S.ListItems>
-                                <a href="">
-                                    Contato
-                                </a>
-                            </S.ListItems>
-                        </S.List>
-                        <S.Responsivo>
-                            <GiHamburgerMenu
-                                onClick={toggleMenu}
-                                fontSize={20}
-                                color='#000'
-                            />
-                            {isOpen && (
-                                <S.SideMenu>
-                                    <a
-                                        onClick={toggleMenu}
-                                    >
-                                        About
+            <S.Header>
+                <Container>
+                    <S.Nav>
+
+                        <S.Title>
+                            &lt;AM/&gt;
+                        </S.Title>
+                        <S.Right>
+                            <S.List>
+                                <S.ListItems>
+                                    <a href="">
+                                        Sobre
                                     </a>
-                                    <a
-                                        onClick={toggleMenu}
-                                    >
+                                </S.ListItems>
+                                <S.ListItems>
+                                    <a href="">
                                         Skills
                                     </a>
-                                    <a
-                                        onClick={toggleMenu}
-                                    >
-                                        Projects
+                                </S.ListItems>
+                                <S.ListItems>
+                                    <a href="">
+                                        Projetos
                                     </a>
-                                    <a
-                                        onClick={toggleMenu}
-                                    >
-                                        Contact
+                                </S.ListItems>
+                                <S.ListItems>
+                                    <a href="">
+                                        Contato
                                     </a>
+                                </S.ListItems>
+                            </S.List>
+                            <S.Responsivo>
+                                <GiHamburgerMenu
+                                    onClick={toggleMenu}
+                                    fontSize={20}
+                                    color='#000'
+                                />
+                                {isOpen && (
+                                    <S.SideMenu>
+                                        <a
+                                            onClick={toggleMenu}
+                                        >
+                                            About
+                                        </a>
+                                        <a
+                                            onClick={toggleMenu}
+                                        >
+                                            Skills
+                                        </a>
+                                        <a
+                                            onClick={toggleMenu}
+                                        >
+                                            Projects
+                                        </a>
+                                        <a
+                                            onClick={toggleMenu}
+                                        >
+                                            Contact
+                                        </a>
 
-                                    <S.Close>
-                                        <MdClose onClick={toggleMenu} size={40} />
-                                    </S.Close>
-                                </S.SideMenu>
-                            )}
-                        </S.Responsivo>
-                    </S.Right>
-                </S.Header>
-            </Container>
+                                        <S.Close>
+                                            <MdClose onClick={toggleMenu} size={40} />
+                                        </S.Close>
+                                    </S.SideMenu>
+                                )}
+                            </S.Responsivo>
+                        </S.Right>
+                    </S.Nav>
+                </Container>
+            </S.Header>
         </>
     )
 }

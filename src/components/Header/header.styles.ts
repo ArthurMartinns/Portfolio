@@ -3,11 +3,21 @@ import styled from "styled-components";
 export const Header = styled.div`
     width: 100%;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
     height: 10rem;
+
+    position: fixed;    
+    background-color: ${props => props.theme.colors.background.primary};
 `
+
+export const Nav = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+`
+
+
 
 export const Title = styled.div`
     font-size: 1.8rem;
