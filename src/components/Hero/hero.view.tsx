@@ -7,23 +7,23 @@ import * as S from './hero.styles'
 function Hero() {
     return (
         <S.Container>
-            <HeaderView/>
+            <HeaderView />
             <Container>
                 <S.Main>
                     <S.SectionHero>
                         <S.SectionHeroLeft>
                             <S.Title>
-                                Olá! Sou Arthur Martins, <br /> 
+                                Olá! Sou Arthur Martins, <br />
                                 <strong>
                                     Desenvolvedor Front - End.
-                                </strong> 
+                                </strong>
                             </S.Title>
                             <S.Subtitle>
                                 Transformando ideias em soluções digitais com código limpo e design moderno.
                             </S.Subtitle>
                             <S.WrapperButtons>
-                                <Button type={TypeButtonEnum.PRIMARY} buttonText={'Entre em contato'}/>
-                                <Button type={TypeButtonEnum.SECONDARY} buttonText={'Ver projetos'}/>
+                                <Button type={TypeButtonEnum.PRIMARY} buttonText={'Entre em contato'} />
+                                <Button type={TypeButtonEnum.SECONDARY} buttonText={'Ver projetos'} />
                             </S.WrapperButtons>
                         </S.SectionHeroLeft>
                         <S.SectionRight>

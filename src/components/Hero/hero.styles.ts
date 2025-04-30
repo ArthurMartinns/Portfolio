@@ -10,6 +10,10 @@ export const Container = styled.div`
 export const Main = styled.div`
     width: 100%;
     height: 650px;
+
+    @media (max-width: 800px) {
+        margin-top: 3rem;
+    }
 `
 
 export const SectionHero = styled.div`
@@ -38,6 +42,10 @@ export const Title = styled.div`
     strong {
         color: ${props => props.theme.colors.gradient.primary.from};
     }
+
+    @media (max-width: 800px) {
+        font-size: 3.8rem;
+    }
 `
 
 
@@ -51,6 +59,18 @@ export const WrapperButtons = styled.div`
     flex-direction: row;
     align-items: center;
     gap: 2rem;
+
+    @media (max-width: 550px) {
+        flex-direction: column;
+        align-items: start;
+        :last-child {
+            width: 100%;
+        }
+
+        :first-child {
+            width: 100%;
+        }
+    }
 `
 
 export const SectionRight = styled.div`

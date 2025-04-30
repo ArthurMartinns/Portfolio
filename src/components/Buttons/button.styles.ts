@@ -21,7 +21,8 @@ export const ButtonSecondary = styled.div`
     padding: 12px 24px;
     border-radius: 6px;
     font-size: 1.5rem;
-
+    text-align: center;
+    
     &:hover {
         opacity: 0.7;
         cursor: pointer;

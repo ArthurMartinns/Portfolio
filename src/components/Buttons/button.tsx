@@ -5,7 +5,7 @@ function Button({
     type = TypeButtonEnum.PRIMARY,
     buttonText
 }: ButtonProps) {
-    return(
+    return (
         <>
             {type === 'primary' &&
                 (
