@@ -31,6 +31,7 @@ export const WrapperItens = styled.div`
 
     @media (max-width: 900px) {
         flex-direction: column;
+        gap: 2rem;
     }
 `
 
@@ -73,7 +74,7 @@ export const Description = styled.p`
 export const Socials = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
     align-items: start;
 `
 

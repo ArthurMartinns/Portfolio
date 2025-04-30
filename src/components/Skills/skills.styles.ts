@@ -24,6 +24,18 @@ export const BottomSkills = styled.div`
         "A C"
         "A D";
     grid-gap: 2rem;
+
+    @media (max-width: 900px) {
+        flex-wrap: wrap;
+        grid-template-columns: 1fr;
+        grid-template-areas: "A"
+                             "A"
+                             "A"
+                             "B"
+                             "C"
+                             "D";
+    }
+
 `
 
 export const BoxItensA = styled.div`
@@ -111,5 +123,5 @@ export const ProgressBarFill = styled.div<{ width: number }>`
 
 export const Description = styled.p`
     font-size: 1.2rem;
-    color: ${props => props.theme.colors.text   .tertiary};
+    color: ${props => props.theme.colors.text.tertiary};
 `

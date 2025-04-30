@@ -25,6 +25,7 @@ export const WrapperAbout = styled.div`
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
+
 `
 
 export const LeftAbout = styled.div`
@@ -45,6 +46,11 @@ export const RightAbout = styled.div`
     padding: 1rem;
  
     width: 100%;
+
+    
+    @media (max-width: 900px) {
+        flex-wrap: wrap;
+    }
 `
 
 export const RightAboutItem = styled.div`
