@@ -3,9 +3,9 @@ import Container from '../Container/container.view'
 import { useState } from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { MdClose } from 'react-icons/md'
+import { ButtonThemeMode } from '../ButtonThemeMode/button-theme-mode.view'
 
 function HeaderView() {
-
     const [isOpen, setIsOpen] = useState<boolean>(false)
 
     const toggleMenu = () => {
@@ -17,7 +17,6 @@ function HeaderView() {
             <S.Header>
                 <Container>
                     <S.Nav>
-
                         <S.Title>
                             &lt;AM/&gt;
                         </S.Title>
@@ -42,6 +41,9 @@ function HeaderView() {
                                     <a href="">
                                         Contato
                                     </a>
+                                </S.ListItems>
+                                <S.ListItems>
+                                    <ButtonThemeMode />
                                 </S.ListItems>
                             </S.List>
                             <S.Responsivo>
@@ -71,6 +73,9 @@ function HeaderView() {
                                             onClick={toggleMenu}
                                         >
                                             Contact
+                                        </a>
+                                        <a>
+                                            <ButtonThemeMode />
                                         </a>
 
                                         <S.Close>

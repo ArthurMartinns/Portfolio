@@ -14,10 +14,7 @@ export const Nav = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 `
-
-
 
 export const Title = styled.div`
     font-size: 1.8rem;
@@ -39,7 +36,7 @@ export const SideMenu = styled.div`
     color: ${props => props.theme.colors.text.tertiary};
     background-color:  ${props => props.theme.colors.background.tertiary};
     > a {
-        font-size: 2.8rem;
+        font-size: 2.4rem;
         text-decoration: none;
     }
 
@@ -60,7 +57,7 @@ export const List = styled.ul`
     list-style: none;
     display: flex;
     flex-direction: row;
-    align-items: end;
+    align-items: center;
     gap: 1.8rem;
 
     @media screen and (max-width: 768px){
@@ -80,6 +77,16 @@ export const ListItems = styled.li`
             color: ${props => props.theme.colors.text.primary}
         }
     }
+    svg {
+        font-weight: 400;
+        font-size: 2rem;
+        text-decoration: none;
+        color: ${props => props.theme.colors.text.tertiary};
+
+        &:hover {
+            color: ${props => props.theme.colors.text.primary}
+        }
+    }
 `
 
 export const Right = styled.div`
@@ -87,7 +94,6 @@ export const Right = styled.div`
     flex-direction: row;
     align-items: center;
     gap: 1.8rem;
-
 `
 
 export const Responsivo = styled.div`
