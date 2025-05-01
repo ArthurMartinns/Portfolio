@@ -16,7 +16,7 @@ interface ThemeProviderProps {
     children: ReactNode;
 }
 
-export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
+export const ThemeProviderContext: React.FC<ThemeProviderProps> = ({ children }) => {
     const [themeMode, setTheme] = useState<Theme>('light');
 
     const toggleTheme = () => {
