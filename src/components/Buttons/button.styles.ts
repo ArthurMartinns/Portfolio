@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const ButtonPrimary = styled.div`
     background-color:  ${props => props.theme.colors.gradient.primary.from};
-    color: ${props => props.theme.colors.primary[50]};
     padding: 12px 24px;
     border-radius: 6px;
     font-size: 1.5rem;
@@ -12,6 +11,7 @@ export const ButtonPrimary = styled.div`
         opacity: 0.9;
         cursor: pointer;
     }
+    color: ${props => props.theme.colors.text.inverse};
 `
 
 export const ButtonSecondary = styled.div`

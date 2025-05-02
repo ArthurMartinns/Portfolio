@@ -5,11 +5,15 @@ export const Container = styled.div`
 
     display: flex;
     flex-direction: column;
+
 `
 
 export const Main = styled.div`
     width: 100%;
     height: 650px;
+
+    background-color: ${props => props.theme.colors.background.tertiary};
+
 
     @media (max-width: 800px) {
         margin-top: 3rem;
@@ -78,5 +82,6 @@ export const SectionRight = styled.div`
         border-radius: 20px;
         width: 100%;
         max-width: 450px;
+        margin-top: 2rem;
     }
 `

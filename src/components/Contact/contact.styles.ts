@@ -12,6 +12,8 @@ export const Container = styled.div`
         color: ${props => props.theme.colors.text.secondary};
         font-size: 13px;
     }
+
+    background-color: ${props => props.theme.colors.background.tertiary};
 `
 
 export const ContentContact = styled.div`
@@ -56,12 +58,14 @@ export const ItensRight = styled.div`
 
     label {
         font-size: 14px;
+        color: ${props => props.theme.colors.text.primary};
     }
 
     input, textarea {
-        padding: 12px 24px;
+        padding: 12px 16px;
         border-radius: 8px;
         border: 1px solid rgb(182, 182, 182);
+        background-color: transparent;
     }
 `
 

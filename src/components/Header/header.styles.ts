@@ -6,7 +6,6 @@ export const Header = styled.div`
     align-items: center;
     height: 10rem;
 
-    position: fixed;    
     background-color: ${props => props.theme.colors.background.primary};
 `
 
@@ -14,10 +13,12 @@ export const Nav = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 `
 
 export const Title = styled.div`
     font-size: 1.8rem;
+    color: ${props => props.theme.colors.text.primary};
     font-weight: 700;
 `
 

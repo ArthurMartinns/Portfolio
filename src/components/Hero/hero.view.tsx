@@ -6,8 +6,10 @@ import * as S from './hero.styles'
 
 function Hero() {
     return (
+        <>
+        
+        <HeaderView />
         <S.Container>
-            <HeaderView />
             <Container>
                 <S.Main>
                     <S.SectionHero>
@@ -33,6 +35,7 @@ function Hero() {
                 </S.Main>
             </Container>
         </S.Container>
+        </>
     )
 }
 
