@@ -13,6 +13,12 @@ export const Container = styled.div`
         font-size: 13px;
     }
 
+    p:last-child {
+        color: ${props => props.theme.colors.text.secondary};
+        font-size: 13px;
+        text-align: center;
+    }
+
     background-color: ${props => props.theme.colors.background.tertiary};
 `
 
