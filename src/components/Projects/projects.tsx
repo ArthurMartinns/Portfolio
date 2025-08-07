@@ -7,22 +7,22 @@ import CardProject from '../CardProjects/card-projects'
 function Projects() {
     const projetos = [
         {
-            title: 'Finanças',
-            description: 'Uma plataforma web para controle financeiro pessoal, permitindo acompanhar receitas, despesas e gerar relatórios detalhados para melhor planejamento financeiro.',
+            title: 'Projeto em desenvolvimento',
+            description: '...',
             img: 'assets/projectsImgs.png',
             linkRepositorio: '',
             deploy: ''
         },
         {
-            title: 'Ecommerce',
-            description: 'Um sistema de e-commerce moderno e responsivo, com catálogo de produtos, carrinho de compras, checkout seguro e integração com meios de pagamento.',
+            title: 'Projeto em desenvolvimento',
+            description: '...',
             img: 'assets/projectsImgs.png',
             linkRepositorio: '',
             deploy: ''
         },
         {
-            title: 'Landing Page',
-            description: 'Uma landing page otimizada para conversão, com design moderno, responsivo e elementos interativos para apresentar serviços ou produtos de forma atraente.',
+            title: 'Projeto em desenvolvimento',
+            description: '...',
             img: 'assets/projectsImgs.png',
             linkRepositorio: '',
             deploy: ''
