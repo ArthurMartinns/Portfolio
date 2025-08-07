@@ -4,7 +4,7 @@ import * as S from './contact.styles'
 import Container from '../Container/container.view';
 import { LuGithub } from 'react-icons/lu';
 import { FiLinkedin } from 'react-icons/fi';
-import { FaRegEnvelope } from 'react-icons/fa';
+import { FaRegEnvelope, FaWhatsapp } from 'react-icons/fa';
 import Button from '../Buttons/button';
 import { TypeButtonEnum } from '../Buttons/button.type';
 
@@ -34,6 +34,14 @@ function Contact() {
                                         <p>
                                             <a href="https://www.linkedin.com/in/arthurmarrtins/" target='_blank'>
                                                 Linkedin
+                                            </a>
+                                        </p>
+                                    </S.SocialItens>
+                                    <S.SocialItens>
+                                        <FaWhatsapp fontSize={25} />
+                                        <p>
+                                            <a href="https://wa.me/5531997002244" target='_blank'>
+                                                WhatsApp
                                             </a>
                                         </p>
                                     </S.SocialItens>
