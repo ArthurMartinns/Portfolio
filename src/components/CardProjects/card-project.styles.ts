@@ -28,6 +28,7 @@ export const Bottom = styled.div`
 export const Title = styled.h2`
     font-size: 2rem;
     font-weight: 500;
+    color: ${props => props.theme.colors.text.primary};
 `
 
 export const Description = styled.p`

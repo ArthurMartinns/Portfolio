@@ -150,16 +150,16 @@ export const darkTheme = {
     },
 
     background: {
-      primary: '#0f172a',     // fundo principal
-      secondary: '#1e293b',   // fundo secundário
-      tertiary: '#334155',    // fundo terciário
+      primary: '#0f172a',
+      secondary: '#1e293b',
+      tertiary: '#334155',
     },
 
     text: {
-      primary: '#f8fafc',     // texto principal
-      secondary: '#cbd5e1',   // texto secundário
-      tertiary: '#94a3b8',    // texto terciário
-      inverse: '#0f172a',     // texto em fundos claros
+      primary: '#f8fafc',
+      secondary: '#cbd5e1',
+      tertiary: '#94a3b8',
+      inverse: '#0f172a',
     },
 
     border: {

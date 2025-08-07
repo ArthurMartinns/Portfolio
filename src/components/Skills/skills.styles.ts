@@ -22,8 +22,7 @@ export const BottomSkills = styled.div`
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
         "A B"
-        "A C"
-        "A D";
+        "A C";
     grid-gap: 2rem;
 
     @media (max-width: 900px) {
@@ -77,6 +76,7 @@ export const BoxItensD = styled.div`
 `
 export const BoxItensTitle = styled.h2`
     font-size: 1.8rem;
+    color: ${props => props.theme.colors.text.primary};
 `
 
 export const BoxItensSkills = styled.h2`
@@ -104,6 +104,7 @@ export const BoxItensSkillsRowLeft = styled.h2`
 
     p{
         font-size: 1.4rem;
+        color: ${props => props.theme.colors.text.primary};
     }
 `
 

@@ -40,7 +40,7 @@ function Contact() {
                                     <S.SocialItens>
                                         <FaRegEnvelope fontSize={25} />
                                         <p>
-                                            arthurmartiinscontato@gmail.com
+                                            arthurmartinsdev@gmail.com
                                         </p>
                                     </S.SocialItens>
                                 </S.Socials>
@@ -58,7 +58,7 @@ function Contact() {
                                     <label htmlFor="">
                                         Mensagem:
                                     </label>
-                                    <textarea name="" id="" />
+                                    <textarea name="" id="" style={{ resize: 'none' }} />
                                     <Button type={TypeButtonEnum.PRIMARY} buttonText={'Enviar mensagem'} />
                                 </form>
                             </S.ItensRight>

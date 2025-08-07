@@ -1,42 +1,35 @@
 import Container from '../Container/container.view'
 import Title from '../Title/title'
 import * as S from './skills.styles'
-import { FaGit, FaRegFileCode } from "react-icons/fa";
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
+import { FaGit, FaJava, FaRegFileCode } from "react-icons/fa";
 import { FaReact } from "react-icons/fa6";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiStyledcomponents } from "react-icons/si";
+import { SiPostgresql, SiStyledcomponents } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
-import { FaNodeJs } from "react-icons/fa";
 import { SiTypescript } from 'react-icons/si';
-import { FiBox } from "react-icons/fi";
-import { TbBrandCSharp } from "react-icons/tb";
+import { DiJavascript, DiMysql } from 'react-icons/di';
+import { GiSpring } from 'react-icons/gi';
 
 function Skills() {
 
     const Skills = {
         FrontEnd: [
-            { name: 'HTML', level: 100, icon: <FaHtml5 size={18} color='#2563eb' />, description: 'Estruturação semântica e acessibilidade' },
-            { name: 'CSS', level: 95, icon: <FaCss3Alt size={18} color='#2563eb' />, description: 'Layouts responsivos e animações' },
-            { name: 'JavaScript', level: 76, icon: <IoLogoJavascript size={18} color='#2563eb' />, description: 'ES6+, DOM, Async/Await' },
-            { name: 'TypeScript', level: 88, icon: <SiTypescript size={18} color='#2563eb' />, description: 'Tipagem estática, interfaces, generics' },
             { name: 'React', level: 82, icon: <FaReact size={18} color='#2563eb' />, description: 'Hooks, Context, Redux' },
+            { name: 'TypeScript', level: 90, icon: <SiTypescript size={18} color='#2563eb' />, description: 'Tipagem estática, interfaces, generics' },
+            { name: 'JavaScript', level: 77, icon: <DiJavascript size={18} color='#2563eb' />, description: 'Tipagem estática, interfaces, generics' },
             { name: 'Tailwind Css', level: 71, icon: <RiTailwindCssFill size={18} color='#2563eb' />, description: 'Mobile-first CSS' },
             { name: 'Styled Components', level: 87, icon: <SiStyledcomponents size={18} color='#2563eb' />, description: 'CSS-in-JS' },
-            { name: 'Bootstrap', level: 100, icon: <FaBootstrap size={18} color='#2563eb' />, description: 'Framework CSS' },
+            { name: 'Bootstrap', level: 68, icon: <FaBootstrap size={18} color='#2563eb' />, description: 'Framework CSS' },
         ],
         BackEnd: [
-            { name: 'Nodejs', level: 40, icon: <FaNodeJs size={18} color='#2563eb' />, description: 'Express, APIs RESTful' },
-            { name: 'C#', level: 20, icon: <TbBrandCSharp size={18} color='#2563eb' />, description: '.NET, ASP.NET Core, Entity Framework' },
+            { name: 'Java', level: 40, icon: <FaJava size={18} color='#2563eb' />, description: 'Desenvolvimento de aplicativos empresariais e sistemas escaláveis' },
+            { name: 'Spring Boot', level: 40, icon: <GiSpring size={18} color='#2563eb' />, description: 'Framework Java para aplicações back-end rápidas e escaláveis' },
+
         ],
         'Controle de versão': [
-            { name: 'Git', level: 92, icon: <FaGit size={18} color='#2563eb' />, description: 'Fluxo de trabalho, branches, CI/CD' }
-        ],
-        'Ui Libraries': [
-            { name: 'Material-UI', level: 100, icon: <FiBox size={18} color='#2563eb' />, description: 'Componentes React com Material Design' },
-            { name: 'Chakra UI', level: 100, icon: <FiBox size={18} color='#2563eb' />, description: 'Biblioteca de componentes acessíveis' },
+            { name: 'Git', level: 92, icon: <FaGit size={18} color='#2563eb' />, description: 'Fluxo de trabalho, branches, CI/CD' },
+            { name: 'MySQL', level: 55, icon: <DiMysql size={18} color='#2563eb' />, description: 'Sistema de banco de dados relacional de código aberto' },
+            { name: 'PostgreSQL', level: 67, icon: <SiPostgresql size={18} color='#2563eb' />, description: 'Banco de dados relacional avançado com suporte a dados não estruturados' },
         ],
     }
 
@@ -78,7 +71,7 @@ function Skills() {
                             </S.BoxItensA>
                             <S.BoxItensB>
                                 <S.BoxItensTitle>
-                                    Back - end
+                                    Back - end e Banco de Dados
                                 </S.BoxItensTitle>
                                 {Skills.BackEnd.map((item,) => (
                                     <>
@@ -106,7 +99,7 @@ function Skills() {
                             </S.BoxItensB>
                             <S.BoxItensC>
                                 <S.BoxItensTitle>
-                                    Controle de versão
+                                    Controle de versão e Banco de Dados
                                 </S.BoxItensTitle>
                                 {Skills['Controle de versão'].map((item,) => (
                                     <>
@@ -132,34 +125,6 @@ function Skills() {
                                     </>
                                 ))}
                             </S.BoxItensC>
-                            <S.BoxItensD>
-                                <S.BoxItensTitle>
-                                    Bibliotecas Ui
-                                </S.BoxItensTitle>
-                                {Skills['Ui Libraries'].map((item,) => (
-                                    <>
-                                        <S.BoxItensSkills>
-                                            <S.BoxItensSkillsRow>
-                                                <S.BoxItensSkillsRowLeft>
-                                                    {item.icon}
-                                                    <p>
-                                                        {item.name}
-                                                    </p>
-                                                </S.BoxItensSkillsRowLeft>
-                                                <span>
-                                                    {item.level}%
-                                                </span>
-                                            </S.BoxItensSkillsRow>
-                                            <S.ProgressBarContainer>
-                                                <S.ProgressBarFill width={item.level} />
-                                            </S.ProgressBarContainer>
-                                            <S.Description>
-                                                {item.description}
-                                            </S.Description>
-                                        </S.BoxItensSkills>
-                                    </>
-                                ))}
-                            </S.BoxItensD>
                         </S.BottomSkills>
                     </S.SectionSkills>
                 </Container>

@@ -11,7 +11,7 @@ export const ButtonPrimary = styled.div`
         opacity: 0.9;
         cursor: pointer;
     }
-    color: ${props => props.theme.colors.text.inverse};
+    color: ${props => props.theme.colors.text.primary};
 `
 
 export const ButtonSecondary = styled.div`
