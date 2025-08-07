@@ -17,7 +17,7 @@ function Hero() {
                                 <S.Title>
                                     Olá! Sou Arthur Martins, <br />
                                     <strong>
-                                        Desenvolvedor Front - End.
+                                        Engenheiro de Software.
                                     </strong>
                                 </S.Title>
                                 <S.Subtitle>
