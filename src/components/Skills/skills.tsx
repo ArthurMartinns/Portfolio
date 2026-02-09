@@ -10,118 +10,77 @@ import { SiTypescript } from 'react-icons/si';
 import { DiJavascript, DiMysql } from 'react-icons/di';
 import { GiSpring } from 'react-icons/gi';
 
-const skillsData = {
-    FrontEnd: [
-        { name: 'React', level: 82, icon: <FaReact size={18} color='#2563eb' />, description: 'Hooks, Context, Redux' },
-        { name: 'TypeScript', level: 90, icon: <SiTypescript size={18} color='#2563eb' />, description: 'Tipagem estática, interfaces, generics' },
-        { name: 'JavaScript', level: 77, icon: <DiJavascript size={18} color='#2563eb' />, description: 'ES6+, manipulação de DOM, boas práticas' },
-        { name: 'Tailwind Css', level: 71, icon: <RiTailwindCssFill size={18} color='#2563eb' />, description: 'Mobile-first CSS' },
-        { name: 'Styled Components', level: 87, icon: <SiStyledcomponents size={18} color='#2563eb' />, description: 'CSS-in-JS' },
-        { name: 'Bootstrap', level: 68, icon: <FaBootstrap size={18} color='#2563eb' />, description: 'Framework CSS' },
-    ],
-    BackEnd: [
-        { name: 'Java', level: 40, icon: <FaJava size={18} color='#2563eb' />, description: 'Desenvolvimento de aplicativos empresariais e sistemas escaláveis' },
-        { name: 'Spring Boot', level: 40, icon: <GiSpring size={18} color='#2563eb' />, description: 'Framework Java para aplicações back-end rápidas e escaláveis' },
-
-    ],
-    'Controle de versão': [
-        { name: 'Git', level: 92, icon: <FaGit size={18} color='#2563eb' />, description: 'Fluxo de trabalho, branches, CI/CD' },
-        { name: 'MySQL', level: 55, icon: <DiMysql size={18} color='#2563eb' />, description: 'Sistema de banco de dados relacional de código aberto' },
-        { name: 'PostgreSQL', level: 67, icon: <SiPostgresql size={18} color='#2563eb' />, description: 'Banco de dados relacional avançado com suporte a dados não estruturados' },
-    ],
-}
+const skillGroups = [
+    {
+        label: 'Front-end',
+        description: 'Stack principal para construir interfaces modernas.',
+        skills: [
+            { name: 'React', icon: <FaReact size={22} /> },
+            { name: 'TypeScript', icon: <SiTypescript size={22} /> },
+            { name: 'JavaScript', icon: <DiJavascript size={22} /> },
+            { name: 'Tailwind', icon: <RiTailwindCssFill size={22} /> },
+            { name: 'Styled Components', icon: <SiStyledcomponents size={22} /> },
+            { name: 'Bootstrap', icon: <FaBootstrap size={22} /> },
+        ]
+    },
+    {
+        label: 'Back-end',
+        description: 'Base para APIs, regras de negócio e integrações.',
+        skills: [
+            { name: 'Java', icon: <FaJava size={22} /> },
+            { name: 'Spring Boot', icon: <GiSpring size={22} /> },
+        ]
+    },
+    {
+        label: 'Ferramentas & Dados',
+        description: 'Controle de versão e bancos relacionais.',
+        skills: [
+            { name: 'Git', icon: <FaGit size={22} /> },
+            { name: 'MySQL', icon: <DiMysql size={22} /> },
+            { name: 'PostgreSQL', icon: <SiPostgresql size={22} /> },
+        ]
+    }
+]
 
 function Skills() {
     return (
-        <>
-            <S.Container id="skills">
-                <Container>
-                    <S.SectionSkills>
-                        <Title text={'Minhas Skills'} Icon={FaRegFileCode} />
-                        <S.BottomSkills>
-                            <S.BoxItensA>
-                                <S.BoxItensTitle>
-                                    Front-end
-                                </S.BoxItensTitle>
-                                {skillsData.FrontEnd.map((item) => (
-                                    <S.BoxItensSkills key={item.name}>
-                                        <S.BoxItensSkillsRow>
-                                            <S.BoxItensSkillsRowLeft>
-                                                {item.icon}
-                                                <p>
-                                                    {item.name}
-                                                </p>
-                                            </S.BoxItensSkillsRowLeft>
-                                            <span>
-                                                {item.level}%
-                                            </span>
-                                        </S.BoxItensSkillsRow>
-                                        <S.ProgressBarContainer>
-                                            <S.ProgressBarFill width={item.level} />
-                                        </S.ProgressBarContainer>
-                                        <S.Description>
-                                            {item.description}
-                                        </S.Description>
-                                    </S.BoxItensSkills>
-                                ))}
-                            </S.BoxItensA>
-                            <S.BoxItensB>
-                                <S.BoxItensTitle>
-                                    Back-end e Banco de Dados
-                                </S.BoxItensTitle>
-                                {skillsData.BackEnd.map((item) => (
-                                    <S.BoxItensSkills key={item.name}>
-                                        <S.BoxItensSkillsRow>
-                                            <S.BoxItensSkillsRowLeft>
-                                                {item.icon}
-                                                <p>
-                                                    {item.name}
-                                                </p>
-                                            </S.BoxItensSkillsRowLeft>
-                                            <span>
-                                                {item.level}%
-                                            </span>
-                                        </S.BoxItensSkillsRow>
-                                        <S.ProgressBarContainer>
-                                            <S.ProgressBarFill width={item.level} />
-                                        </S.ProgressBarContainer>
-                                        <S.Description>
-                                            {item.description}
-                                        </S.Description>
-                                    </S.BoxItensSkills>
-                                ))}
-                            </S.BoxItensB>
-                            <S.BoxItensC>
-                                <S.BoxItensTitle>
-                                    Controle de versão e Banco de Dados
-                                </S.BoxItensTitle>
-                                {skillsData['Controle de versão'].map((item) => (
-                                    <S.BoxItensSkills key={item.name}>
-                                        <S.BoxItensSkillsRow>
-                                            <S.BoxItensSkillsRowLeft>
-                                                {item.icon}
-                                                <p>
-                                                    {item.name}
-                                                </p>
-                                            </S.BoxItensSkillsRowLeft>
-                                            <span>
-                                                {item.level}%
-                                            </span>
-                                        </S.BoxItensSkillsRow>
-                                        <S.ProgressBarContainer>
-                                            <S.ProgressBarFill width={item.level} />
-                                        </S.ProgressBarContainer>
-                                        <S.Description>
-                                            {item.description}
-                                        </S.Description>
-                                    </S.BoxItensSkills>
-                                ))}
-                            </S.BoxItensC>
-                        </S.BottomSkills>
-                    </S.SectionSkills>
-                </Container>
-            </S.Container>
-        </>
+        <S.Container id="skills">
+            <Container>
+                <S.SectionSkills>
+                    <Title text={'Minhas Skills'} Icon={FaRegFileCode} />
+                    <S.Layout>
+                        <S.Summary>
+                            <S.SummaryChip>Stack focada em produto</S.SummaryChip>
+                            <S.SummaryText>
+                                Tecnologias que utilizo no dia a dia para tirar ideias do papel,
+                                da interface ao back-end e persistência de dados.
+                            </S.SummaryText>
+                        </S.Summary>
+
+                        <S.SkillCloud>
+                            {skillGroups.map(group => (
+                                <S.SkillGroup key={group.label}>
+                                    <S.GroupHeader>
+                                        <S.GroupTitle>{group.label}</S.GroupTitle>
+                                        <S.GroupSubtitle>{group.description}</S.GroupSubtitle>
+                                    </S.GroupHeader>
+                                    <S.SkillPillsRow>
+                                        {group.skills.map(skill => (
+                                            <S.SkillPill key={skill.name}>
+                                                <S.SkillIconWrapper>
+                                                    {skill.icon}
+                                                </S.SkillIconWrapper>
+                                                <span>{skill.name}</span>
+                                            </S.SkillPill>
+                                        ))}
+                                    </S.SkillPillsRow>
+                                </S.SkillGroup>
+                            ))}
+                        </S.SkillCloud>
+                    </S.Layout>
+                </S.SectionSkills>
+            </Container>
+        </S.Container>
     )
 }
 

@@ -6,16 +6,12 @@ import { FaExternalLinkAlt } from 'react-icons/fa'
 function CardProject({
     title,
     description,
-    img,
     linkRepositorio,
     deploy,
     tags = []
 }: CardProjectsProps) {
     return (
         <S.CardProjectsContainer>
-            <S.Image>
-                <img src={img} alt={title} />
-            </S.Image>
             <S.Bottom>
                 <S.Title>
                     {title}

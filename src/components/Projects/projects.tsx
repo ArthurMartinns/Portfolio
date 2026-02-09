@@ -6,31 +6,29 @@ import CardProject from '../CardProjects/card-projects'
 
 const projetos = [
     {
-        id: 'projeto-todo',
-        title: 'ToDo List com React',
-        description: 'Aplicação de lista de tarefas com filtros, persistência em localStorage e interface responsiva. Focada em boas práticas de estado e componentização.',
-        img: 'assets/toDoList.png',
-        linkRepositorio: 'https://github.com/ArthurMartinns',
-        deploy: 'https://',
-        tags: ['React', 'TypeScript', 'Styled Components']
-    },
-    {
         id: 'projeto-portfolio',
         title: 'Portfólio Pessoal',
-        description: 'Página de apresentação profissional com seções de sobre mim, skills, projetos e contato, com suporte a tema claro/escuro.',
-        img: 'assets/projectsImgs.png',
-        linkRepositorio: 'https://github.com/ArthurMartinns',
+        description: 'Página de apresentação profissional com seções de sobre mim, skills, projetos e contato.',
+        img: '/image.png',
+        linkRepositorio: 'https://github.com/ArthurMartinns/Portfolio',
         deploy: 'https://',
         tags: ['Vite', 'React', 'Design Responsivo']
     },
     {
-        id: 'projeto-dashboard',
-        title: 'Dashboard de Métricas',
-        description: 'Dashboard front-end para visualização de métricas com gráficos, cards de KPIs e integração simulada com APIs.',
-        img: 'assets/pcImg.avif',
-        linkRepositorio: 'https://github.com/ArthurMartinns',
+        id: 'projeto-chess-system-java',
+        title: 'Chess System Java',
+        description: 'Sistema de xadrez em Java console com design patterns e orientação a objetos.',
+        linkRepositorio: 'https://github.com/ArthurMartinns/chess-system-java',
         deploy: 'https://',
-        tags: ['React', 'Charts', 'UI/UX']
+        tags: ['Java', 'Design Patterns', 'Orientação a Objetos']
+    },
+    {
+        id: 'projeto-spring-boot-mongo',
+        title: 'Spring Boot com MongoDB',
+        description: 'Projeto de estudo com Spring Boot e MongoDB para CRUD de posts de usuarios.',
+        linkRepositorio: 'https://github.com/ArthurMartinns/spring-mongo',
+        deploy: 'https://',
+        tags: ['Spring Boot', 'MongoDB', 'CRUD']
     },
 ]
 
@@ -46,7 +44,6 @@ function Projects() {
                                 key={projeto.id}
                                 title={projeto.title}
                                 description={projeto.description}
-                                img={projeto.img}
                                 linkRepositorio={projeto.linkRepositorio}
                                 deploy={projeto.deploy}
                                 tags={projeto.tags}

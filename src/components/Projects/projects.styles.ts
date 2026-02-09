@@ -22,9 +22,7 @@ export const ProjectsItens = styled.div`
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 
     gap: 2rem;
 `

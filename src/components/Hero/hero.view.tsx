@@ -21,15 +21,24 @@ function Hero() {
                     <S.Main>
                         <S.SectionHero>
                             <S.SectionHeroLeft>
+                                <S.HighlightBadge>
+                                    <S.BadgeDot />
+                                    Disponível para novos desafios
+                                </S.HighlightBadge>
                                 <S.Title>
-                                    Olá! Sou Arthur Martins, <br />
+                                    Olá! Eu sou Arthur Martins, <br />
                                     <strong>
-                                        Engenheiro de Software.
+                                        Engenheiro de Software
                                     </strong>
                                 </S.Title>
                                 <S.Subtitle>
-                                    Transformando ideias em soluções digitais com código limpo e design moderno.
+                                    Especializado em transformar ideias em produtos digitais modernos,
+                                    com foco em experiência do usuário, performance e qualidade de código.
                                 </S.Subtitle>
+                                <S.MetaRow>
+                                    <S.MetaItem>Desenvolvimento Web End-to-end</S.MetaItem>
+                                    <S.MetaItem>React, Java, Spring Boot</S.MetaItem>
+                                </S.MetaRow>
                                 <S.WrapperButtons>
                                     <Button
                                         type={TypeButtonEnum.PRIMARY}
