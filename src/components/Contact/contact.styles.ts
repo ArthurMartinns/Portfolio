@@ -27,6 +27,7 @@ export const ContentContact = styled.div`
     flex-direction: column;
     align-items: start;
     gap: 2rem;
+    animation: fadeInUp 0.8s ease-out;
 `
 
 export const WrapperItens = styled.div`

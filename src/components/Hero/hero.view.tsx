@@ -5,6 +5,13 @@ import HeaderView from '../Header/header.view'
 import * as S from './hero.styles'
 
 function Hero() {
+    const handleScrollToSection = (sectionId: string) => {
+        const section = document.getElementById(sectionId)
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' })
+        }
+    }
+
     return (
         <>
 
@@ -24,12 +31,20 @@ function Hero() {
                                     Transformando ideias em soluções digitais com código limpo e design moderno.
                                 </S.Subtitle>
                                 <S.WrapperButtons>
-                                    <Button type={TypeButtonEnum.PRIMARY} buttonText={'Entre em contato'} />
-                                    <Button type={TypeButtonEnum.SECONDARY} buttonText={'Ver projetos'} />
+                                    <Button
+                                        type={TypeButtonEnum.PRIMARY}
+                                        buttonText={'Entre em contato'}
+                                        onClick={() => handleScrollToSection('contato')}
+                                    />
+                                    <Button
+                                        type={TypeButtonEnum.SECONDARY}
+                                        buttonText={'Ver projetos'}
+                                        onClick={() => handleScrollToSection('projetos')}
+                                    />
                                 </S.WrapperButtons>
                             </S.SectionHeroLeft>
                             <S.SectionRight>
-                                <img src="me.jpeg" alt="" />
+                                <img src="/me.jpeg" alt="Foto de Arthur Martins" />
                             </S.SectionRight>
                         </S.SectionHero>
                     </S.Main>

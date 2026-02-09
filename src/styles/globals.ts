@@ -7,20 +7,45 @@ export default createGlobalStyle`
         box-sizing: border-box;
     }
 
-    body {
-        height: 100vh;
-    }
-
     html {
         list-style: none;
         font-family: "Sora", sans-serif;
         font-size: 62.5%;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        min-height: 100vh;
+        background-color: ${({ theme }) => theme.colors.background.primary};
+        color: ${({ theme }) => theme.colors.text.primary};
     }
 
     a {
         cursor: pointer;
-        color: #000;
-        font-size: 20px;
+        color: ${({ theme }) => theme.colors.text.primary};
+        font-size: 1.6rem;
     }
 
+    button {
+        font-family: inherit;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        * {
+            animation-duration: 0.001ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.001ms !important;
+        }
+    }
 `

@@ -15,6 +15,7 @@ export const SectionSkills = styled.div`
     flex-direction: column;
     justify-content: start;
     gap: 2rem;
+    animation: fadeInUp 0.8s ease-out;
 `
 
 export const BottomSkills = styled.div`

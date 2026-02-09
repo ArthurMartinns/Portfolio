@@ -6,10 +6,13 @@ export const ButtonPrimary = styled.div`
     border-radius: 6px;
     font-size: 1.5rem;
     text-align: center;
+    transition: all 0.2s ease;
     
     &:hover {
-        opacity: 0.9;
+        opacity: 0.95;
         cursor: pointer;
+        transform: translateY(-1px);
+        box-shadow: ${props => props.theme.colors.shadow.md};
     }
     color: ${props => props.theme.colors.text.primary};
 `
@@ -22,9 +25,12 @@ export const ButtonSecondary = styled.div`
     border-radius: 6px;
     font-size: 1.5rem;
     text-align: center;
+    transition: all 0.2s ease;
     
     &:hover {
-        opacity: 0.7;
+        opacity: 0.8;
         cursor: pointer;
+        transform: translateY(-1px);
+        box-shadow: ${props => props.theme.colors.shadow.sm};
     }
 `

@@ -23,22 +23,22 @@ function HeaderView() {
                         <S.Right>
                             <S.List>
                                 <S.ListItems>
-                                    <a href="">
+                                    <a href="#sobre">
                                         Sobre
                                     </a>
                                 </S.ListItems>
                                 <S.ListItems>
-                                    <a href="">
+                                    <a href="#skills">
                                         Skills
                                     </a>
                                 </S.ListItems>
                                 <S.ListItems>
-                                    <a href="">
+                                    <a href="#projetos">
                                         Projetos
                                     </a>
                                 </S.ListItems>
                                 <S.ListItems>
-                                    <a href="">
+                                    <a href="#contato">
                                         Contato
                                     </a>
                                 </S.ListItems>
@@ -55,24 +55,28 @@ function HeaderView() {
                                 {isOpen && (
                                     <S.SideMenu>
                                         <a
+                                            href="#sobre"
                                             onClick={toggleMenu}
                                         >
-                                            About
+                                            Sobre
                                         </a>
                                         <a
+                                            href="#skills"
                                             onClick={toggleMenu}
                                         >
                                             Skills
                                         </a>
                                         <a
+                                            href="#projetos"
                                             onClick={toggleMenu}
                                         >
-                                            Projects
+                                            Projetos
                                         </a>
                                         <a
+                                            href="#contato"
                                             onClick={toggleMenu}
                                         >
-                                            Contact
+                                            Contato
                                         </a>
                                         <a>
                                             <ButtonThemeMode />

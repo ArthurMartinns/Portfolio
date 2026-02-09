@@ -1,6 +1,6 @@
-import React, { createContext, useState, useContext, ReactNode } from 'react';
-
-type Theme = 'light' | 'dark';
+/* eslint-disable react-refresh/only-export-components */
+import React, { createContext, useState, useContext, ReactNode, useEffect } from 'react';
+import { getInitialTheme, Theme } from './theme.utils';
 
 interface ThemeContextProps {
     themeMode: Theme;
@@ -17,7 +17,12 @@ interface ThemeProviderProps {
 }
 
 export const ThemeProviderContext: React.FC<ThemeProviderProps> = ({ children }) => {
-    const [themeMode, setTheme] = useState<Theme>('light');
+    const [themeMode, setTheme] = useState<Theme>(() => getInitialTheme());
+
+    useEffect(() => {
+        if (typeof window === 'undefined') return
+        window.localStorage.setItem('theme-mode', themeMode)
+    }, [themeMode])
 
     const toggleTheme = () => {
         setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));

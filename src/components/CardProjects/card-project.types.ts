@@ -3,5 +3,6 @@ export interface CardProjectsProps {
     description: string,
     img: string,
     linkRepositorio: string,
-    deploy: string
+    deploy: string,
+    tags?: string[]
 }

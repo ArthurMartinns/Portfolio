@@ -7,7 +7,6 @@ export const ProjectsContainer = styled.div`
     align-items: center;
     justify-content: center;
     background-color: ${props => props.theme.colors.gradient.secondary.from};
-
 `
 export const ProjectContent = styled.div`
     width: 100%;
@@ -15,6 +14,7 @@ export const ProjectContent = styled.div`
     flex-direction: column;
     align-items: flex-start;
     gap: 2.5rem;
+    animation: fadeInUp 0.8s ease-out;
 `
 
 export const ProjectsItens = styled.div`
@@ -22,7 +22,7 @@ export const ProjectsItens = styled.div`
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 

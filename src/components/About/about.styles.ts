@@ -17,6 +17,7 @@ export const AboutContent = styled.div`
     flex-direction: column;
     justify-content: space-between;
     gap: 3rem;
+    animation: fadeInUp 0.8s ease-out;
 `
 
 export const WrapperAbout = styled.div`

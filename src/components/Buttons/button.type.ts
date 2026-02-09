@@ -5,5 +5,6 @@ export enum TypeButtonEnum{
 
 export type ButtonProps = {
     type: TypeButtonEnum,
-    buttonText: string
+    buttonText: string,
+    onClick?: () => void
 }

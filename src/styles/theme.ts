@@ -2,64 +2,64 @@ export const theme = {
   colors: {
 
     primary: {
-      50: '#eff6ff',
-      100: '#dbeafe',
-      200: '#bfdbfe',
-      300: '#93c5fd',
-      400: '#60a5fa',
-      500: '#3b82f6',
-      600: '#2563eb',
-      700: '#1d4ed8',
-      800: '#1e40af',
-      900: '#1e3a8a',
+      50: '#eef2ff',
+      100: '#e0e7ff',
+      200: '#c7d2fe',
+      300: '#a5b4fc',
+      400: '#818cf8',
+      500: '#6366f1',
+      600: '#4f46e5',
+      700: '#4338ca',
+      800: '#3730a3',
+      900: '#312e81',
     },
 
 
     background: {
-      primary: '#ffffff',
-      secondary: '#f9fafb',
-      tertiary: '#f3f4f6',
+      primary: '#f9fafb',
+      secondary: '#ffffff',
+      tertiary: '#eef2ff',
     },
 
 
     text: {
-      primary: '#111827',
-      secondary: '#4b5563',
-      tertiary: '#6b7280',
-      inverse: '#ffffff',
+      primary: '#020617',
+      secondary: '#334155',
+      tertiary: '#64748b',
+      inverse: '#f9fafb',
     },
 
     border: {
       light: '#e5e7eb',
-      medium: '#d1d5db',
-      dark: '#9ca3af',
+      medium: '#cbd5f5',
+      dark: '#94a3b8',
     },
 
 
     status: {
-      success: '#10b981',
+      success: '#22c55e',
       error: '#ef4444',
-      warning: '#f59e0b',
-      info: '#3b82f6',
+      warning: '#eab308',
+      info: '#0ea5e9',
     },
 
     // Gradient colors
     gradient: {
       primary: {
-        from: '#2563eb',
-        to: '#3b82f6',
+        from: '#4f46e5',
+        to: '#6366f1',
       },
       secondary: {
-        from: '#f9fafb',
-        to: '#f3f4f6',
+        from: '#eef2ff',
+        to: '#e0f2fe',
       },
     },
 
     // Shadow colors
     shadow: {
-      sm: '0 1px 2px 0 rgb(0 0 0 / 0.05)',
-      md: '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)',
-      lg: '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)',
+      sm: '0 10px 30px rgba(15, 23, 42, 0.06)',
+      md: '0 20px 45px rgba(15, 23, 42, 0.08)',
+      lg: '0 25px 55px rgba(15, 23, 42, 0.12)',
     },
   },
 
@@ -137,59 +137,59 @@ export const darkTheme = {
   colors: {
 
     primary: {
-      50: '#1e293b',
-      100: '#1e40af',
+      50: '#1d2440',
+      100: '#1e293b',
       200: '#1e3a8a',
-      300: '#1e40af',
-      400: '#2563eb',
-      500: '#3b82f6',
-      600: '#60a5fa',
-      700: '#93c5fd',
-      800: '#bfdbfe',
-      900: '#dbeafe',
+      300: '#4338ca',
+      400: '#4f46e5',
+      500: '#6366f1',
+      600: '#818cf8',
+      700: '#a5b4fc',
+      800: '#c7d2fe',
+      900: '#e0e7ff',
     },
 
     background: {
-      primary: '#0f172a',
-      secondary: '#1e293b',
-      tertiary: '#334155',
+      primary: '#020617',
+      secondary: '#020617',
+      tertiary: '#020617',
     },
 
     text: {
-      primary: '#f8fafc',
-      secondary: '#cbd5e1',
-      tertiary: '#94a3b8',
-      inverse: '#0f172a',
+      primary: '#e5e7eb',
+      secondary: '#9ca3af',
+      tertiary: '#6b7280',
+      inverse: '#020617',
     },
 
     border: {
-      light: '#334155',
-      medium: '#475569',
-      dark: '#64748b',
+      light: '#1f2937',
+      medium: '#374151',
+      dark: '#4b5563',
     },
 
     status: {
-      success: '#10b981',
-      error: '#ef4444',
-      warning: '#f59e0b',
-      info: '#3b82f6',
+      success: '#22c55e',
+      error: '#f97373',
+      warning: '#eab308',
+      info: '#38bdf8',
     },
 
     gradient: {
       primary: {
-        from: '#1e3a8a',
-        to: '#3b82f6',
+        from: '#1e293b',
+        to: '#4f46e5',
       },
       secondary: {
-        from: '#1e293b',
-        to: '#334155',
+        from: '#020617',
+        to: '#0f172a',
       },
     },
 
     shadow: {
-      sm: '0 1px 2px 0 rgb(255 255 255 / 0.05)',
-      md: '0 4px 6px -1px rgb(255 255 255 / 0.1), 0 2px 4px -2px rgb(255 255 255 / 0.1)',
-      lg: '0 10px 15px -3px rgb(255 255 255 / 0.1), 0 4px 6px -4px rgb(255 255 255 / 0.1)',
+      sm: '0 10px 30px rgba(15, 23, 42, 0.55)',
+      md: '0 20px 45px rgba(15, 23, 42, 0.65)',
+      lg: '0 25px 55px rgba(15, 23, 42, 0.75)',
     },
   },
 

@@ -3,24 +3,21 @@ import * as S from './button.styles'
 
 function Button({
     type = TypeButtonEnum.PRIMARY,
-    buttonText
+    buttonText,
+    onClick,
 }: ButtonProps) {
     return (
         <>
-            {type === 'primary' &&
-                (
-                    <S.ButtonPrimary>
-                        {buttonText}
-                    </S.ButtonPrimary>
-                )
-            }
-            {type === 'secondary' &&
-                (
-                    <S.ButtonSecondary>
-                        {buttonText}
-                    </S.ButtonSecondary>
-                )
-            }
+            {type === TypeButtonEnum.PRIMARY && (
+                <S.ButtonPrimary onClick={onClick}>
+                    {buttonText}
+                </S.ButtonPrimary>
+            )}
+            {type === TypeButtonEnum.SECONDARY && (
+                <S.ButtonSecondary onClick={onClick}>
+                    {buttonText}
+                </S.ButtonSecondary>
+            )}
         </>
     )
 }

@@ -8,34 +8,40 @@ function CardProject({
     description,
     img,
     linkRepositorio,
-    deploy
+    deploy,
+    tags = []
 }: CardProjectsProps) {
     return (
-        <>
-            <S.CardProjectsContainer>
-                <S.Image>
-                    <img src={img} alt={title} />
-                </S.Image>
-                <S.Bottom>
-                    <S.Title>
-                        {title}
-                    </S.Title>
-                    <S.Description>
-                        {description}
-                    </S.Description>
-                    <S.Links>
-                        <S.TextLink href={linkRepositorio} target={'_blank'}>
-                            <SiGithub />
-                            Acesse o repositório
-                        </S.TextLink>
-                        <S.TextLink href={deploy} target={'_blank'}>
-                            <FaExternalLinkAlt />
-                            Confira o deploy
-                        </S.TextLink>
-                    </S.Links>
-                </S.Bottom>
-            </S.CardProjectsContainer>
-        </>
+        <S.CardProjectsContainer>
+            <S.Image>
+                <img src={img} alt={title} />
+            </S.Image>
+            <S.Bottom>
+                <S.Title>
+                    {title}
+                </S.Title>
+                <S.Description>
+                    {description}
+                </S.Description>
+                {!!tags.length && (
+                    <S.Tags>
+                        {tags.map((tag) => (
+                            <S.Tag key={tag}>{tag}</S.Tag>
+                        ))}
+                    </S.Tags>
+                )}
+                <S.Links>
+                    <S.TextLink href={linkRepositorio} target={'_blank'} rel="noreferrer">
+                        <SiGithub />
+                        Acesse o repositório
+                    </S.TextLink>
+                    <S.TextLink href={deploy} target={'_blank'} rel="noreferrer">
+                        <FaExternalLinkAlt />
+                        Confira o deploy
+                    </S.TextLink>
+                </S.Links>
+            </S.Bottom>
+        </S.CardProjectsContainer>
     )
 }
 

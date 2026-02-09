@@ -13,7 +13,7 @@ export const Main = styled.div`
     height: 650px;
 
     background-color: ${props => props.theme.colors.background.primary};
-
+    animation: fadeInUp 0.8s ease-out;
 
     @media (max-width: 800px) {
         margin-top: 3rem;
@@ -28,6 +28,13 @@ export const SectionHero = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 3rem;
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+    }
 `
 
 export const SectionHeroLeft = styled.div`

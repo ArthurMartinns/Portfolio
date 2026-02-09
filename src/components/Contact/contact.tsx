@@ -11,7 +11,7 @@ import { TypeButtonEnum } from '../Buttons/button.type';
 function Contact() {
     return (
         <>
-            <S.Container>
+            <S.Container id="contato">
                 <Container>
                     <S.ContentContact>
                         <Title text={'Contato'} Icon={SiGmail} />
@@ -24,7 +24,11 @@ function Contact() {
                                     <S.SocialItens>
                                         <LuGithub fontSize={25} />
                                         <p>
-                                            <a href="https://github.com/ArthurMartinns" target='_blank'>
+                                            <a
+                                                href="https://github.com/ArthurMartinns"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
                                                 GitHub
                                             </a>
                                         </p>
@@ -32,7 +36,11 @@ function Contact() {
                                     <S.SocialItens>
                                         <FiLinkedin fontSize={25} />
                                         <p>
-                                            <a href="https://www.linkedin.com/in/arthurmarrtins/" target='_blank'>
+                                            <a
+                                                href="https://www.linkedin.com/in/arthurmarrtins/"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
                                                 Linkedin
                                             </a>
                                         </p>
@@ -40,7 +48,11 @@ function Contact() {
                                     <S.SocialItens>
                                         <FaWhatsapp fontSize={25} />
                                         <p>
-                                            <a href="https://wa.me/5531997002244" target='_blank'>
+                                            <a
+                                                href="https://wa.me/5531997002244"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
                                                 WhatsApp
                                             </a>
                                         </p>
@@ -54,19 +66,34 @@ function Contact() {
                                 </S.Socials>
                             </S.ItensLeft>
                             <S.ItensRight>
-                                <form action="">
-                                    <label htmlFor="">
+                                <form>
+                                    <label htmlFor="nome">
                                         Nome:
                                     </label>
-                                    <input type="text" placeholder='Digite seu nome: ' />
-                                    <label htmlFor="">
+                                    <input
+                                        id="nome"
+                                        name="nome"
+                                        type="text"
+                                        placeholder="Digite seu nome"
+                                    />
+                                    <label htmlFor="email">
                                         Email:
                                     </label>
-                                    <input type="text" placeholder='Digite seu email: ' />
-                                    <label htmlFor="">
+                                    <input
+                                        id="email"
+                                        name="email"
+                                        type="email"
+                                        placeholder="Digite seu e-mail"
+                                    />
+                                    <label htmlFor="mensagem">
                                         Mensagem:
                                     </label>
-                                    <textarea name="" id="" style={{ resize: 'none' }} />
+                                    <textarea
+                                        id="mensagem"
+                                        name="mensagem"
+                                        placeholder="Digite sua mensagem"
+                                        style={{ resize: 'none' }}
+                                    />
                                     <Button type={TypeButtonEnum.PRIMARY} buttonText={'Enviar mensagem'} />
                                 </form>
                             </S.ItensRight>
